@@ -50,9 +50,9 @@ using Pythonic PREP7 line commands.
 
  .. code-block:: none
 
-    Product:             Ansys Mechanical Enterprise Solver
+    Product:             Ansys Mechanical Enterprise
     MAPDL Version:       21.2
-    ansys.mapdl Version: 0.60.dev0
+    ansys.mapdl Version: 0.60.5
 
 
 
@@ -115,9 +115,10 @@ Create a circular arc that travels between ``(0, 0, 0)`` and
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_01-lines_001.png
-    :alt: 01 lines
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_01-lines_001.png
+   :alt: 01 lines
+   :srcset: /examples/02-geometry/images/sphx_glr_01-lines_001.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -158,9 +159,10 @@ Create two circles and join them with a line.  Plot the result.
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_01-lines_002.png
-    :alt: 01 lines
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_01-lines_002.png
+   :alt: 01 lines
+   :srcset: /examples/02-geometry/images/sphx_glr_01-lines_002.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -202,9 +204,10 @@ Create two circular arcs and connect them with a spline.  Plot the result.
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_01-lines_003.png
-    :alt: 01 lines
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_01-lines_003.png
+   :alt: 01 lines
+   :srcset: /examples/02-geometry/images/sphx_glr_01-lines_003.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -245,9 +248,10 @@ keypoint at ``(1, 1, 1)`` at an angle of 60 degrees.  Plot the result.
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_01-lines_004.png
-    :alt: 01 lines
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_01-lines_004.png
+   :alt: 01 lines
+   :srcset: /examples/02-geometry/images/sphx_glr_01-lines_004.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -288,9 +292,10 @@ Generate a line on a square between its two corners.
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_01-lines_005.png
-    :alt: 01 lines
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_01-lines_005.png
+   :alt: 01 lines
+   :srcset: /examples/02-geometry/images/sphx_glr_01-lines_005.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -355,9 +360,10 @@ Create a single line and divide it into 5 pieces.
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_01-lines_006.png
-    :alt: 01 lines
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_01-lines_006.png
+   :alt: 01 lines
+   :srcset: /examples/02-geometry/images/sphx_glr_01-lines_006.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -396,9 +402,10 @@ Create a circular arc and extend it at one of its keypoints.
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_01-lines_007.png
-    :alt: 01 lines
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_01-lines_007.png
+   :alt: 01 lines
+   :srcset: /examples/02-geometry/images/sphx_glr_01-lines_007.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -440,9 +447,10 @@ fillet between them.
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_01-lines_008.png
-    :alt: 01 lines
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_01-lines_008.png
+   :alt: 01 lines
+   :srcset: /examples/02-geometry/images/sphx_glr_01-lines_008.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -483,9 +491,10 @@ directed to a new keypoint.
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_01-lines_009.png
-    :alt: 01 lines
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_01-lines_009.png
+   :alt: 01 lines
+   :srcset: /examples/02-geometry/images/sphx_glr_01-lines_009.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -526,9 +535,10 @@ Generate a segmented spline through 5 keypoints.
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_01-lines_010.png
-    :alt: 01 lines
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_01-lines_010.png
+   :alt: 01 lines
+   :srcset: /examples/02-geometry/images/sphx_glr_01-lines_010.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -571,9 +581,10 @@ single line rather than multiple lines.
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_01-lines_011.png
-    :alt: 01 lines
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_01-lines_011.png
+   :alt: 01 lines
+   :srcset: /examples/02-geometry/images/sphx_glr_01-lines_011.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -828,9 +839,10 @@ plotting methods.
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_01-lines_012.png
-    :alt: 01 lines
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_01-lines_012.png
+   :alt: 01 lines
+   :srcset: /examples/02-geometry/images/sphx_glr_01-lines_012.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -840,8 +852,8 @@ plotting methods.
  .. code-block:: none
 
 
-    [(0.49362252512946725, 0.4962814152240753, 3.4901514812073824),
-     (0.49362252512946725, 0.4962814152240753, 0.5131786204874516),
+    [(0.5310980752110481, 0.5174320749938488, 3.3115284709160098),
+     (0.5310980752110481, 0.5174320749938488, 0.5799155905842781),
      (0.0, 1.0, 0.0)]
 
 
@@ -849,7 +861,7 @@ plotting methods.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.023 seconds)
+   **Total running time of the script:** ( 0 minutes  4.581 seconds)
 
 
 .. _sphx_glr_download_examples_02-geometry_01-lines.py:

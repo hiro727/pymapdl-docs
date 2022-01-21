@@ -4,8 +4,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Using Python to Code UPF Subroutines &#8212; ansys.mapdl.core 0.60.4 documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Using Python to Code UPF Subroutines &#8212; ansys.mapdl.core 0.60.5 documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -318,7 +319,7 @@
               
               <div>
                 
-  <div class="section" id="using-python-to-code-upf-subroutines">
+  <section id="using-python-to-code-upf-subroutines">
 <span id="python-upf"></span><h1>Using Python to Code UPF Subroutines<a class="headerlink" href="#using-python-to-code-upf-subroutines" title="Permalink to this headline">¶</a></h1>
 <p>As an alternative to compiled languages like C and Fortran, you can use the Python
 language to code user programmable subroutines. A subset of the documented UPF subroutines
@@ -337,7 +338,7 @@ libraries like NumPy.</p>
 <li><p><a class="reference internal" href="#python-upf-limitations">Python UPF Limitations</a></p></li>
 <li><p><a class="reference internal" href="#python-upf-examples">Python UPF Examples</a></p></li>
 </ul>
-<div class="section" id="supported-upf-subroutines">
+<section id="supported-upf-subroutines">
 <h2>Supported UPF Subroutines<a class="headerlink" href="#supported-upf-subroutines" title="Permalink to this headline">¶</a></h2>
 <p>A subset of the entire set of available UPF subroutines support Python coding (see the
 table below). This list will be expanded in the future.</p>
@@ -408,8 +409,8 @@ table below). This list will be expanded in the future.</p>
 <tr class="row-odd"></tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="python-upf-methodology">
+</section>
+<section id="python-upf-methodology">
 <h2>Python UPF Methodology<a class="headerlink" href="#python-upf-methodology" title="Permalink to this headline">¶</a></h2>
 <p>Coding a Python UPF is different from using a compiled language like C/C++ or Fortran,
 mainly in terms of the API. Because the <a class="reference external" href="https://storage.ansys.com/doclinks/external.html?code=grpc-ELU-N2a">gRPC technology</a>
@@ -502,8 +503,8 @@ server:</p>
 <span class="o">&gt;&gt;</span> <span class="n">We</span> <span class="n">shutdown</span> <span class="n">Python</span> <span class="n">Server</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="accessing-the-database-from-the-python-code">
+</section>
+<section id="accessing-the-database-from-the-python-code">
 <h2>Accessing the Database from the Python Code<a class="headerlink" href="#accessing-the-database-from-the-python-code" title="Permalink to this headline">¶</a></h2>
 <p>Within your UPF routine, you may need to access the Mechanical APDL database in read/write
 mode.</p>
@@ -584,16 +585,16 @@ exposed and can be called from the Python code.</p>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="python-upf-limitations">
+</section>
+<section id="python-upf-limitations">
 <h2>Python UPF Limitations<a class="headerlink" href="#python-upf-limitations" title="Permalink to this headline">¶</a></h2>
 <p>The Python UPF capability has these limitations:</p>
 <ul class="simple">
 <li><p>Currently, Distributed Ansys is not supported. You must specify the <code class="docutils literal notranslate"><span class="pre">-smp</span></code> option on the command line to make sure Mechanical APDL is running in shared-memory processing mode.</p></li>
 <li><p>Python UPFs are only available on Linux platforms.</p></li>
 </ul>
-</div>
-<div class="section" id="python-upf-examples">
+</section>
+<section id="python-upf-examples">
 <h2>Python UPF Examples<a class="headerlink" href="#python-upf-examples" title="Permalink to this headline">¶</a></h2>
 <p>The following Python UPF Examples are available in <a class="reference internal" href="extended_examples/Python_UPF/python_upf_examples.html#python-upf-examples"><span class="std std-ref">Python UPF Examples</span></a> :</p>
 <ul class="simple">
@@ -601,8 +602,8 @@ exposed and can be called from the Python code.</p>
 <li><p>Example: Python <cite>UsrShift</cite> Subroutine</p></li>
 <li><p>Example: Python <cite>UserHyper</cite> Subroutine</p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
 
               </div>
@@ -626,7 +627,7 @@ exposed and can be called from the Python code.</p>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.2.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br>
 </p>
     </div>
     

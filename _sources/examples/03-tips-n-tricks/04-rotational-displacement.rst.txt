@@ -54,7 +54,7 @@ of our square.
  .. code-block:: none
 
 
-    '*** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2021 R2          21.2BETA ***\n DISTRIBUTED Ansys Mechanical Enterprise                       \n\n 00000000  VERSION=LINUX x64     17:10:17  DEC 03, 2021 CP=      0.358\n\n                                                                               \n\n\n\n ** WARNING: PRE-RELEASE VERSION OF ANSYS 21.2BETA\n  ANSYS,INC TESTING IS NOT COMPLETE - CHECK RESULTS CAREFULLY **\n\n          ***** ANSYS ANALYSIS DEFINITION (PREP7) *****'
+    '*****ANSYS VERIFICATION RUN ONLY*****\n     DO NOT USE RESULTS FOR PRODUCTION\n\n          ***** ANSYS ANALYSIS DEFINITION (PREP7) *****'
 
 
 
@@ -92,9 +92,10 @@ freedom. Following this we:
 
 
 
-.. image:: /examples/03-tips-n-tricks/images/sphx_glr_04-rotational-displacement_001.png
-    :alt: 04 rotational displacement
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/03-tips-n-tricks/images/sphx_glr_04-rotational-displacement_001.png
+   :alt: 04 rotational displacement
+   :srcset: /examples/03-tips-n-tricks/images/sphx_glr_04-rotational-displacement_001.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -103,6 +104,10 @@ freedom. Following this we:
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+      warnings.warn(
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
     [(2.077350269189626, 2.077350269189626, 1.5773502691896262),
      (0.5, 0.5, 0.0),
@@ -146,7 +151,7 @@ Applying Boundary Conditions
  .. code-block:: none
 
 
-    '*** NOTE ***                            CP =       3.362   TIME= 17:10:18\n The automatic domain decomposition logic has selected the MESH domain   \n decomposition method with 2 processes per solution.                     \n\n *****  ANSYS SOLVE    COMMAND  *****\n\n *** NOTE ***                            CP =       3.363   TIME= 17:10:18\n There is no title defined for this analysis.                            \n\n *** SELECTION OF ELEMENT TECHNOLOGIES FOR APPLICABLE ELEMENTS ***\n                ---GIVE SUGGESTIONS ONLY---\n\n ELEMENT TYPE         1 IS SHELL181. IT IS ASSOCIATED WITH ELASTOPLASTIC \n MATERIALS ONLY. KEYOPT(8)=2 IS SUGGESTED AND KEYOPT(3)=2 IS SUGGESTED FOR\n HIGHER ACCURACY OF MEMBRANE STRESSES; OTHERWISE, KEYOPT(3)=0 IS SUGGESTED.\n\n\n\n *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2021 R2          21.2BETA ***\n DISTRIBUTED Ansys Mechanical Enterprise                       \n\n 00000000  VERSION=LINUX x64     17:10:18  DEC 03, 2021 CP=      3.363\n\n                                                                               \n\n\n\n ** WARNING: PRE-RELEASE VERSION OF ANSYS 21.2BETA\n  ANSYS,INC TESTING IS NOT COMPLETE - CHECK RESULTS CAREFULLY **\n\n                       S O L U T I O N   O P T I O N S\n\n   PROBLEM DIMENSIONALITY. . . . . . . . . . . . .3-D                  \n   DEGREES OF FREEDOM. . . . . . UX   UY   UZ   ROTX ROTY ROTZ\n   ANALYSIS TYPE . . . . . . . . . . . . . . . . .STATIC (STEADY-STATE)\n   GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  \n\n *** NOTE ***                            CP =       3.363   TIME= 17:10:18\n Present time 0 is less than or equal to the previous time.  Time will   \n default to 1.                                                           \n\n *** NOTE ***                            CP =       3.363   TIME= 17:10:18\n The conditions for direct assembly have been met.  No .emat or .erot    \n files will be produced.                                                 \n\n  \n  \n     D I S T R I B U T E D   D O M A I N   D E C O M P O S E R\n  \n  ...Number of elements: 25\n  ...Number of nodes:    36\n  ...Decompose to 2 CPU domains\n  ...Element load balance ratio =     1.083\n\n\n                      L O A D   S T E P   O P T I O N S\n\n   LOAD STEP NUMBER. . . . . . . . . . . . . . . .     1\n   TIME AT END OF THE LOAD STEP. . . . . . . . . .  1.0000    \n   NUMBER OF SUBSTEPS. . . . . . . . . . . . . . .     1\n   STEP CHANGE BOUNDARY CONDITIONS . . . . . . . .    NO\n   PRINT OUTPUT CONTROLS . . . . . . . . . . . . .NO PRINTOUT\n   DATABASE OUTPUT CONTROLS. . . . . . . . . . . .ALL DATA WRITTEN\n                                                  FOR THE LAST SUBSTEP\n\n\n SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           \n\n *** NOTE ***                            CP =       3.371   TIME= 17:10:18\n Predictor is ON by default for structural elements with rotational      \n degrees of freedom.  Use the PRED,OFF command to turn the predictor     \n OFF if it adversely affects the convergence.                            \n\n\n Range of element maximum matrix coefficients in global coordinates\n Maximum = 7487.02512 at element 6.                                      \n Minimum = 7487.02512 at element 1.                                      \n\n   *** ELEMENT MATRIX FORMULATION TIMES\n     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP\n\n        1        25  SHELL181      0.002   0.000074\n Time at end of element matrix formulation CP = 3.37356806.              \n\n DISTRIBUTED SPARSE MATRIX DIRECT SOLVER.\n  Number of equations =         174,    Maximum wavefront =     42\n\n  Local memory allocated for solver              =      0.305 MB\n  Local memory required for in-core solution     =      0.293 MB\n  Local memory required for out-of-core solution =      0.293 MB\n\n  Total memory allocated for solver              =      0.567 MB\n  Total memory required for in-core solution     =      0.544 MB\n  Total memory required for out-of-core solution =      0.544 MB\n\n *** NOTE ***                            CP =       3.383   TIME= 17:10:18\n The Distributed Sparse Matrix Solver is currently running in the        \n in-core memory mode.  This memory mode uses the most amount of memory   \n in order to avoid using the hard drive as much as possible, which most  \n often results in the fastest solution time.  This mode is recommended   \n if enough physical memory is present to accommodate all of the solver   \n data.                                                                   \n Distributed sparse solver maximum pivot= 29948.1005 at node 23 UY.      \n Distributed sparse solver minimum pivot= 0.248519178 at node 2 ROTZ.    \n Distributed sparse solver minimum pivot in absolute value= 0.248519178  \n at node 2 ROTZ.                                                         \n\n   *** ELEMENT RESULT CALCULATION TIMES\n     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP\n\n        1        25  SHELL181      0.003   0.000105\n\n   *** NODAL LOAD CALCULATION TIMES\n     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP\n\n        1        25  SHELL181      0.000   0.000015\n *** LOAD STEP     1   SUBSTEP     1  COMPLETED.    CUM ITER =      1\n *** TIME =   1.00000         TIME INC =   1.00000      NEW TRIANG MATRIX\n\n\n *** ANSYS BINARY FILE STATISTICS\n  BUFFER SIZE USED= 16384\n        0.062 MB WRITTEN ON ASSEMBLED MATRIX FILE: file0.full\n        0.312 MB WRITTEN ON RESULTS FILE: file0.rst'
+    '*****  ANSYS SOLVE    COMMAND  *****\n\n *** NOTE ***                            CP =       0.000   TIME= 00:00:00\n There is no title defined for this analysis.                            \n\n *** SELECTION OF ELEMENT TECHNOLOGIES FOR APPLICABLE ELEMENTS ***\n                ---GIVE SUGGESTIONS ONLY---\n\n ELEMENT TYPE         1 IS SHELL181. IT IS ASSOCIATED WITH ELASTOPLASTIC \n MATERIALS ONLY. KEYOPT(8)=2 IS SUGGESTED AND KEYOPT(3)=2 IS SUGGESTED FOR\n HIGHER ACCURACY OF MEMBRANE STRESSES; OTHERWISE, KEYOPT(3)=0 IS SUGGESTED.\n\n\n   *****ANSYS VERIFICATION RUN ONLY*****\n     DO NOT USE RESULTS FOR PRODUCTION\n\n                       S O L U T I O N   O P T I O N S\n\n   PROBLEM DIMENSIONALITY. . . . . . . . . . . . .3-D                  \n   DEGREES OF FREEDOM. . . . . . UX   UY   UZ   ROTX ROTY ROTZ\n   ANALYSIS TYPE . . . . . . . . . . . . . . . . .STATIC (STEADY-STATE)\n   GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  \n\n *** NOTE ***                            CP =       0.000   TIME= 00:00:00\n Present time 0 is less than or equal to the previous time.  Time will   \n default to 1.                                                           \n\n *** NOTE ***                            CP =       0.000   TIME= 00:00:00\n The conditions for direct assembly have been met.  No .emat or .erot    \n files will be produced.                                                 \n\n                      L O A D   S T E P   O P T I O N S\n\n   LOAD STEP NUMBER. . . . . . . . . . . . . . . .     1\n   TIME AT END OF THE LOAD STEP. . . . . . . . . .  1.0000    \n   NUMBER OF SUBSTEPS. . . . . . . . . . . . . . .     1\n   STEP CHANGE BOUNDARY CONDITIONS . . . . . . . .    NO\n   PRINT OUTPUT CONTROLS . . . . . . . . . . . . .NO PRINTOUT\n   DATABASE OUTPUT CONTROLS. . . . . . . . . . . .ALL DATA WRITTEN\n                                                  FOR THE LAST SUBSTEP\n\n\n *** NOTE ***                            CP =       0.000   TIME= 00:00:00\n Predictor is ON by default for structural elements with rotational      \n degrees of freedom.  Use the PRED,OFF command to turn the predictor     \n OFF if it adversely affects the convergence.                            \n\n\n Range of element maximum matrix coefficients in global coordinates\n Maximum = 7487.02512 at element 0.                                      \n Minimum = 7487.02512 at element 0.                                      \n\n   *** ELEMENT MATRIX FORMULATION TIMES\n     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP\n\n        1        25  SHELL181      0.000   0.000000\n Time at end of element matrix formulation CP = 0.                       \n\n SPARSE MATRIX DIRECT SOLVER.\n  Number of equations =         174,    Maximum wavefront =      0\n  Memory available (MB) =    0.0    ,  Memory required (MB) =    0.0    \n\n Sparse solver maximum pivot= 0 at node 0 .                              \n Sparse solver minimum pivot= 0 at node 0 .                              \n Sparse solver minimum pivot in absolute value= 0 at node 0 .            \n\n   *** ELEMENT RESULT CALCULATION TIMES\n     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP\n\n        1        25  SHELL181      0.000   0.000000\n\n   *** NODAL LOAD CALCULATION TIMES\n     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP\n\n        1        25  SHELL181      0.000   0.000000\n *** LOAD STEP     1   SUBSTEP     1  COMPLETED.    CUM ITER =      1\n *** TIME =   1.00000         TIME INC =   1.00000      NEW TRIANG MATRIX'
 
 
 
@@ -173,10 +178,22 @@ Plotting Stresses
 
 
 
-.. image:: /examples/03-tips-n-tricks/images/sphx_glr_04-rotational-displacement_002.png
-    :alt: 04 rotational displacement
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/03-tips-n-tricks/images/sphx_glr_04-rotational-displacement_002.png
+   :alt: 04 rotational displacement
+   :srcset: /examples/03-tips-n-tricks/images/sphx_glr_04-rotational-displacement_002.png
+   :class: sphx-glr-single-img
 
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+      warnings.warn(
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
 
 
@@ -258,7 +275,7 @@ Extracting Rotational Displacements
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.846 seconds)
+   **Total running time of the script:** ( 0 minutes  0.878 seconds)
 
 
 .. _sphx_glr_download_examples_03-tips-n-tricks_04-rotational-displacement.py:

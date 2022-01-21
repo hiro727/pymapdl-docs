@@ -161,9 +161,10 @@ mid-point nodes to two opposite sides.
 
 
 
-.. image:: /examples/06-verif-manual/images/sphx_glr_vm-003-thermally_loaded_support_structure_001.png
-    :alt: vm 003 thermally loaded support structure
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/06-verif-manual/images/sphx_glr_vm-003-thermally_loaded_support_structure_001.png
+   :alt: vm 003 thermally loaded support structure
+   :srcset: /examples/06-verif-manual/images/sphx_glr_vm-003-thermally_loaded_support_structure_001.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -201,9 +202,10 @@ between the first 2 that is parallel to them.
 
 
 
-.. image:: /examples/06-verif-manual/images/sphx_glr_vm-003-thermally_loaded_support_structure_002.png
-    :alt: vm 003 thermally loaded support structure
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/06-verif-manual/images/sphx_glr_vm-003-thermally_loaded_support_structure_002.png
+   :alt: vm 003 thermally loaded support structure
+   :srcset: /examples/06-verif-manual/images/sphx_glr_vm-003-thermally_loaded_support_structure_002.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -212,6 +214,10 @@ between the first 2 that is parallel to them.
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+      warnings.warn(
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
     [(0.0, -10.0, 54.64101615137755),
      (0.0, -10.0, 0.0),
@@ -286,7 +292,7 @@ Solve
  .. code-block:: none
 
 
-    '*****  ANSYS SOLVE    COMMAND  *****\n\n *** NOTE ***                            CP =       0.000   TIME= 00:00:00\n There is no title defined for this analysis.                            \n   *****ANSYS VERIFICATION RUN ONLY*****\n     DO NOT USE RESULTS FOR PRODUCTION\n\n                       S O L U T I O N   O P T I O N S\n\n   PROBLEM DIMENSIONALITY. . . . . . . . . . . . .3-D                  \n   DEGREES OF FREEDOM. . . . . . UX   UY   UZ  \n   ANALYSIS TYPE . . . . . . . . . . . . . . . . .STATIC (STEADY-STATE)\n   GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  \n\n *** NOTE ***                            CP =       0.000   TIME= 00:00:00\n Present time 0 is less than or equal to the previous time.  Time will   \n default to 1.                                                           \n\n *** NOTE ***                            CP =       0.000   TIME= 00:00:00\n The conditions for direct assembly have been met.  No .emat or .erot    \n files will be produced.                                                 \n\n *** NOTE ***                            CP =       0.000   TIME= 00:00:00\n Only 1 processor can be used for the Distributed ANSYS solution for     \n this model due to the presence of the coupling equations in this        \n particular model.  Distributed parallel processing has been             \n temporarily disabled.                                                   \n\n                      L O A D   S T E P   O P T I O N S\n\n   LOAD STEP NUMBER. . . . . . . . . . . . . . . .     1\n   TIME AT END OF THE LOAD STEP. . . . . . . . . .  1.0000    \n   NUMBER OF SUBSTEPS. . . . . . . . . . . . . . .     1\n   STEP CHANGE BOUNDARY CONDITIONS . . . . . . . .    NO\n   PRINT OUTPUT CONTROLS . . . . . . . . . . . . .NO PRINTOUT\n   DATABASE OUTPUT CONTROLS. . . . . . . . . . . .ALL DATA WRITTEN\n                                                  FOR THE LAST SUBSTEP\n\n\n\n Range of element maximum matrix coefficients in global coordinates\n Maximum = 150000 at element 0.                                          \n Minimum = 80000 at element 0.                                           \n\n   *** ELEMENT MATRIX FORMULATION TIMES\n     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP\n\n        1         3  LINK180       0.000   0.000000\n Time at end of element matrix formulation CP = 0.                       \n\n SPARSE MATRIX DIRECT SOLVER.\n  Number of equations =           1,    Maximum wavefront =      0\n  Memory available (MB) =    0.0    ,  Memory required (MB) =    0.0    \n\n Sparse solver maximum pivot= 0 at node 0 .                              \n Sparse solver minimum pivot= 0 at node 0 .                              \n Sparse solver minimum pivot in absolute value= 0 at node 0 .            \n\n   *** ELEMENT RESULT CALCULATION TIMES\n     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP\n\n        1         3  LINK180       0.000   0.000000\n\n   *** NODAL LOAD CALCULATION TIMES\n     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP\n\n        1         3  LINK180       0.000   0.000000\n *** LOAD STEP     1   SUBSTEP     1  COMPLETED.    CUM ITER =      1\n *** TIME =   1.00000         TIME INC =   1.00000      NEW TRIANG MATRIX'
+    '*****  ANSYS SOLVE    COMMAND  *****\n\n *** NOTE ***                            CP =       0.000   TIME= 00:00:00\n There is no title defined for this analysis.                            \n   *****ANSYS VERIFICATION RUN ONLY*****\n     DO NOT USE RESULTS FOR PRODUCTION\n\n                       S O L U T I O N   O P T I O N S\n\n   PROBLEM DIMENSIONALITY. . . . . . . . . . . . .3-D                  \n   DEGREES OF FREEDOM. . . . . . UX   UY   UZ  \n   ANALYSIS TYPE . . . . . . . . . . . . . . . . .STATIC (STEADY-STATE)\n   GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  \n\n *** NOTE ***                            CP =       0.000   TIME= 00:00:00\n Present time 0 is less than or equal to the previous time.  Time will   \n default to 1.                                                           \n\n *** NOTE ***                            CP =       0.000   TIME= 00:00:00\n The conditions for direct assembly have been met.  No .emat or .erot    \n files will be produced.                                                 \n\n                      L O A D   S T E P   O P T I O N S\n\n   LOAD STEP NUMBER. . . . . . . . . . . . . . . .     1\n   TIME AT END OF THE LOAD STEP. . . . . . . . . .  1.0000    \n   NUMBER OF SUBSTEPS. . . . . . . . . . . . . . .     1\n   STEP CHANGE BOUNDARY CONDITIONS . . . . . . . .    NO\n   PRINT OUTPUT CONTROLS . . . . . . . . . . . . .NO PRINTOUT\n   DATABASE OUTPUT CONTROLS. . . . . . . . . . . .ALL DATA WRITTEN\n                                                  FOR THE LAST SUBSTEP\n\n\n\n Range of element maximum matrix coefficients in global coordinates\n Maximum = 150000 at element 0.                                          \n Minimum = 80000 at element 0.                                           \n\n   *** ELEMENT MATRIX FORMULATION TIMES\n     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP\n\n        1         3  LINK180       0.000   0.000000\n Time at end of element matrix formulation CP = 0.                       \n\n SPARSE MATRIX DIRECT SOLVER.\n  Number of equations =           1,    Maximum wavefront =      0\n  Memory available (MB) =    0.0    ,  Memory required (MB) =    0.0    \n\n Sparse solver maximum pivot= 0 at node 0 .                              \n Sparse solver minimum pivot= 0 at node 0 .                              \n Sparse solver minimum pivot in absolute value= 0 at node 0 .            \n\n   *** ELEMENT RESULT CALCULATION TIMES\n     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP\n\n        1         3  LINK180       0.000   0.000000\n\n   *** NODAL LOAD CALCULATION TIMES\n     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP\n\n        1         3  LINK180       0.000   0.000000\n *** LOAD STEP     1   SUBSTEP     1  COMPLETED.    CUM ITER =      1\n *** TIME =   1.00000         TIME INC =   1.00000      NEW TRIANG MATRIX'
 
 
 
@@ -369,8 +375,8 @@ expected stresses of 19695 and 10152 respectively.
 
                  |   TARGET   |   Mechanical APDL   |   RATIO
     ----------------------------------------------------------------
-        Steel        19695        19695.4844            1.000025
-        Copper       10152        10152.2578            1.000025
+        Steel        19695        19695.4839            1.000025
+        Copper       10152        10152.2581            1.000025
 
     ----------------------------------------------------------------
 
@@ -382,7 +388,7 @@ expected stresses of 19695 and 10152 respectively.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.846 seconds)
+   **Total running time of the script:** ( 0 minutes  0.768 seconds)
 
 
 .. _sphx_glr_download_examples_06-verif-manual_vm-003-thermally_loaded_support_structure.py:

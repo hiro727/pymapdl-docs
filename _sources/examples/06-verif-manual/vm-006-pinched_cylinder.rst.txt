@@ -181,10 +181,6 @@ Set up the element type (a shell-type).
 
     Selected element type is: SHELL181,
     Printout the element list with its own properties:
-     LIST ELEMENT TYPES FROM        1 TO        1 BY        1
-       *****ANSYS VERIFICATION RUN ONLY*****
-         DO NOT USE RESULTS FOR PRODUCTION
-
      ELEMENT TYPE        1 IS SHELL181     4-NODE SHELL                
       KEYOPT( 1- 6)=        0      0      2        0      0      0
       KEYOPT( 7-12)=        0      0      0        0      0      0
@@ -233,10 +229,7 @@ Poisson's ratio is :math:`\nu = 0.3125`.
 
  .. code-block:: none
 
-    LIST MATERIALS        1 TO        1 BY        1
-      PROPERTY= ALL 
-
-     MATERIAL NUMBER        1
+    MATERIAL NUMBER        1
 
           TEMP        EX  
                    0.1050000E+08
@@ -285,8 +278,6 @@ Set up the cross-section properties for a shell element.
 
     *****ANSYS VERIFICATION RUN ONLY*****
          DO NOT USE RESULTS FOR PRODUCTION
-
-     LIST SECTION ID SETS       1 TO       1 BY      1
                      
        SECTION ID NUMBER:           1
        SHELL SECTION TYPE:    
@@ -393,9 +384,9 @@ Set up the keypoints and create the area through the keypoints.
 
  .. code-block:: none
 
-    /home/alex/python/pyvista_venv3.8/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
       warnings.warn(
-    /home/alex/python/pyvista_venv3.8/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
       warnings.warn(
     The number of the keypoint where F is applied: 3
 
@@ -478,16 +469,11 @@ Define line division of the lines, then mesh the area with shell elements.
 
  .. code-block:: none
 
-    /home/alex/python/pyvista_venv3.8/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
       warnings.warn(
-    /home/alex/python/pyvista_venv3.8/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
       warnings.warn(
     LIST ALL SELECTED ELEMENTS.  (LIST NODES)
-       *****ANSYS VERIFICATION RUN ONLY*****
-         DO NOT USE RESULTS FOR PRODUCTION
- 
-        ELEM MAT TYP REL ESY SEC        NODES
- 
            1   1   1   1   0   1      1     3    33    32
            2   1   1   1   0   1      3     4    40    33
            3   1   1   1   0   1      4     5    47    40
@@ -538,11 +524,6 @@ Define line division of the lines, then mesh the area with shell elements.
           48   1   1   1   0   1     79    15    16    80
           49   1   1   1   0   1     27    38    39    26
           50   1   1   1   0   1     38    45    46    39
-       *****ANSYS VERIFICATION RUN ONLY*****
-         DO NOT USE RESULTS FOR PRODUCTION
- 
-        ELEM MAT TYP REL ESY SEC        NODES
- 
           51   1   1   1   0   1     45    52    53    46
           52   1   1   1   0   1     52    59    60    53
           53   1   1   1   0   1     59    66    67    60
@@ -557,12 +538,7 @@ Define line division of the lines, then mesh the area with shell elements.
           62   1   1   1   0   1     67    74    20    21
           63   1   1   1   0   1     74    81    19    20
           64   1   1   1   0   1     81    17    10    19
-    LIST ALL SELECTED NODES.   DSYS=      0
-       *****ANSYS VERIFICATION RUN ONLY*****
-         DO NOT USE RESULTS FOR PRODUCTION
-
-        NODE        X             Y             Z           THXY     THYZ     THZX
-            1   4.9530        0.0000        0.0000          0.00     0.00     0.00
+    1   4.9530        0.0000        0.0000          0.00     0.00     0.00
             2   4.9530        0.0000        5.1750          0.00     0.00     0.00
             3   4.9530        0.0000       0.64687          0.00     0.00     0.00
             4   4.9530        0.0000        1.2937          0.00     0.00     0.00
@@ -612,10 +588,6 @@ Define line division of the lines, then mesh the area with shell elements.
            48   4.5760        1.8954        1.9406          0.00     0.00     0.00
            49   4.1183        2.7517        1.9406          0.00     0.00     0.00
            50   3.5023        3.5023        1.9406          0.00     0.00     0.00
-       *****ANSYS VERIFICATION RUN ONLY*****
-         DO NOT USE RESULTS FOR PRODUCTION
-
-        NODE        X             Y             Z           THXY     THYZ     THZX
            51   2.7517        4.1183        1.9406          0.00     0.00     0.00
            52   1.8954        4.5760        1.9406          0.00     0.00     0.00
            53  0.96628        4.8578        1.9406          0.00     0.00     0.00
@@ -777,16 +749,6 @@ Enter solution mode and solve the system. Print the solver output.
      The conditions for direct assembly have been met.  No .emat or .erot    
      files will be produced.                                                 
 
-  
-  
-         D I S T R I B U T E D   D O M A I N   D E C O M P O S E R
-  
-      ...Number of elements: 64
-      ...Number of nodes:    81
-      ...Decompose to 0 CPU domains
-      ...Element load balance ratio =     0.000
-
-
                           L O A D   S T E P   O P T I O N S
 
        LOAD STEP NUMBER. . . . . . . . . . . . . . . .     1
@@ -814,14 +776,13 @@ Enter solution mode and solve the system. Print the solver output.
             1        64  SHELL181      0.000   0.000000
      Time at end of element matrix formulation CP = 0.                       
 
-     DISTRIBUTED SPARSE MATRIX DIRECT SOLVER.
+     SPARSE MATRIX DIRECT SOLVER.
       Number of equations =         407,    Maximum wavefront =      0
       Memory available (MB) =    0.0    ,  Memory required (MB) =    0.0    
 
-     Distributed sparse solver maximum pivot= 0 at node 0 .                  
-     Distributed sparse solver minimum pivot= 0 at node 0 .                  
-     Distributed sparse solver minimum pivot in absolute value= 0 at node 0  
-     .                                                                       
+     Sparse solver maximum pivot= 0 at node 0 .                              
+     Sparse solver minimum pivot= 0 at node 0 .                              
+     Sparse solver minimum pivot in absolute value= 0 at node 0 .            
 
        *** ELEMENT RESULT CALCULATION TIMES
          TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
@@ -906,9 +867,9 @@ Plot nodal displacement using PyVista.
 
  .. code-block:: none
 
-    /home/alex/python/pyvista_venv3.8/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
       warnings.warn(
-    /home/alex/python/pyvista_venv3.8/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
       warnings.warn(
 
 
@@ -1004,11 +965,6 @@ Perform the simulation again using the element type SHELL281.
  .. code-block:: none
 
     LIST ALL SELECTED ELEMENTS.  (LIST NODES)
-       *****ANSYS VERIFICATION RUN ONLY*****
-         DO NOT USE RESULTS FOR PRODUCTION
- 
-        ELEM MAT TYP REL ESY SEC        NODES
- 
            1   1   1   1   0   1      1     4    73    63     3    72    65    64
            2   1   1   1   0   1      4     6    95    73     5    94    87    72
            3   1   1   1   0   1      6     8   117    95     7   116   109    94
@@ -1059,11 +1015,6 @@ Perform the simulation again using the element type SHELL281.
           48   1   1   1   0   1    213    28    30   215   223    29   224   214
           49   1   1   1   0   1     53    83    85    51    70    84    71    52
           50   1   1   1   0   1     83   105   107    85    92   106    93    84
-       *****ANSYS VERIFICATION RUN ONLY*****
-         DO NOT USE RESULTS FOR PRODUCTION
- 
-        ELEM MAT TYP REL ESY SEC        NODES
- 
           51   1   1   1   0   1    105   127   129   107   114   128   115   106
           52   1   1   1   0   1    127   149   151   129   136   150   137   128
           53   1   1   1   0   1    149   171   173   151   158   172   159   150
@@ -1078,12 +1029,7 @@ Perform the simulation again using the element type SHELL281.
           62   1   1   1   0   1    173   195    38    40   181   196    39   174
           63   1   1   1   0   1    195   217    36    38   203   218    37   196
           64   1   1   1   0   1    217    32    18    36   225    33    35   218
-    LIST ALL SELECTED NODES.   DSYS=      0
-       *****ANSYS VERIFICATION RUN ONLY*****
-         DO NOT USE RESULTS FOR PRODUCTION
-
-        NODE        X             Y             Z           THXY     THYZ     THZX
-            1   4.9530        0.0000        0.0000          0.00     0.00     0.00
+    1   4.9530        0.0000        0.0000          0.00     0.00     0.00
             2   4.9530        0.0000        5.1750          0.00     0.00     0.00
             3   4.9530        0.0000       0.32344          0.00     0.00     0.00
             4   4.9530        0.0000       0.64687          0.00     0.00     0.00
@@ -1133,10 +1079,6 @@ Perform the simulation again using the element type SHELL281.
            48   0.0000        4.9530       0.64688          0.00     0.00     0.00
            49   0.0000        4.9530       0.32344          0.00     0.00     0.00
            50  0.48548        4.9291        0.0000          0.00     0.00     0.00
-       *****ANSYS VERIFICATION RUN ONLY*****
-         DO NOT USE RESULTS FOR PRODUCTION
-
-        NODE        X             Y             Z           THXY     THYZ     THZX
            51  0.96628        4.8578        0.0000          0.00     0.00     0.00
            52   1.4378        4.7397        0.0000          0.00     0.00     0.00
            53   1.8954        4.5760        0.0000          0.00     0.00     0.00
@@ -1187,10 +1129,6 @@ Perform the simulation again using the element type SHELL281.
            98   4.3682        2.3348        1.2937          0.00     0.00     0.00
            99   4.1183        2.7517        1.2937          0.00     0.00     0.00
           100   3.8287        3.1421        1.2937          0.00     0.00     0.00
-       *****ANSYS VERIFICATION RUN ONLY*****
-         DO NOT USE RESULTS FOR PRODUCTION
-
-        NODE        X             Y             Z           THXY     THYZ     THZX
           101   3.5023        3.5023        1.2937          0.00     0.00     0.00
           102   3.1421        3.8287        1.2938          0.00     0.00     0.00
           103   2.7517        4.1183        1.2938          0.00     0.00     0.00
@@ -1241,10 +1179,6 @@ Perform the simulation again using the element type SHELL281.
           148   2.3348        4.3682        2.5875          0.00     0.00     0.00
           149   1.8954        4.5760        2.5875          0.00     0.00     0.00
           150   1.4378        4.7397        2.5875          0.00     0.00     0.00
-       *****ANSYS VERIFICATION RUN ONLY*****
-         DO NOT USE RESULTS FOR PRODUCTION
-
-        NODE        X             Y             Z           THXY     THYZ     THZX
           151  0.96628        4.8578        2.5875          0.00     0.00     0.00
           152  0.48548        4.9291        2.5875          0.00     0.00     0.00
           153   4.8578       0.96628        2.9109          0.00     0.00     0.00
@@ -1295,10 +1229,6 @@ Perform the simulation again using the element type SHELL281.
           198   4.5760        1.8954        4.2047          0.00     0.00     0.00
           199   4.1183        2.7517        4.2047          0.00     0.00     0.00
           200   3.5023        3.5023        4.2047          0.00     0.00     0.00
-       *****ANSYS VERIFICATION RUN ONLY*****
-         DO NOT USE RESULTS FOR PRODUCTION
-
-        NODE        X             Y             Z           THXY     THYZ     THZX
           201   2.7517        4.1183        4.2047          0.00     0.00     0.00
           202   1.8954        4.5760        4.2047          0.00     0.00     0.00
           203  0.96628        4.8578        4.2047          0.00     0.00     0.00
@@ -1353,7 +1283,7 @@ Enter solution mode and solve the system. Print the solver output.
  .. code-block:: none
 
 
-    '*****  ANSYS SOLVE    COMMAND  *****\n\n TRANSFER SOLID MODEL BOUNDARY CONDITIONS TO FINITE ELEMENT MODEL\n      FORCES         TRANSFERRED FROM KEYPOINTS     =      1\n\n *** NOTE ***                            CP =       0.000   TIME= 00:00:00\n There is no title defined for this analysis.                            \n\n *** SELECTION OF ELEMENT TECHNOLOGIES FOR APPLICABLE ELEMENTS ***\n                ---GIVE SUGGESTIONS ONLY---\n\n ELEMENT TYPE         1 IS SHELL281. IT IS ASSOCIATED WITH ELASTOPLASTIC \n MATERIALS ONLY. KEYOPT(8)=2 IS SUGGESTED.\n\n\n   *****ANSYS VERIFICATION RUN ONLY*****\n     DO NOT USE RESULTS FOR PRODUCTION\n\n                       S O L U T I O N   O P T I O N S\n\n   PROBLEM DIMENSIONALITY. . . . . . . . . . . . .3-D                  \n   DEGREES OF FREEDOM. . . . . . UX   UY   UZ   ROTX ROTY ROTZ\n   ANALYSIS TYPE . . . . . . . . . . . . . . . . .STATIC (STEADY-STATE)\n   GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  \n\n *** NOTE ***                            CP =       0.000   TIME= 00:00:00\n Present time 0 is less than or equal to the previous time.  Time will   \n default to 1.                                                           \n\n *** NOTE ***                            CP =       0.000   TIME= 00:00:00\n The conditions for direct assembly have been met.  No .emat or .erot    \n files will be produced.                                                 \n\n  \n  \n     D I S T R I B U T E D   D O M A I N   D E C O M P O S E R\n  \n  ...Number of elements: 64\n  ...Number of nodes:    225\n  ...Decompose to 0 CPU domains\n  ...Element load balance ratio =     0.000\n\n\n                      L O A D   S T E P   O P T I O N S\n\n   LOAD STEP NUMBER. . . . . . . . . . . . . . . .     1\n   TIME AT END OF THE LOAD STEP. . . . . . . . . .  1.0000    \n   NUMBER OF SUBSTEPS. . . . . . . . . . . . . . .     1\n   STEP CHANGE BOUNDARY CONDITIONS . . . . . . . .    NO\n   PRINT OUTPUT CONTROLS . . . . . . . . . . . . .NO PRINTOUT\n   DATABASE OUTPUT CONTROLS. . . . . . . . . . . .ALL DATA WRITTEN\n                                                  FOR THE LAST SUBSTEP\n\n\n *** NOTE ***                            CP =       0.000   TIME= 00:00:00\n Predictor is ON by default for structural elements with rotational      \n degrees of freedom.  Use the PRED,OFF command to turn the predictor     \n OFF if it adversely affects the convergence.                            \n\n\n Range of element maximum matrix coefficients in global coordinates\n Maximum = 3034922.21 at element 0.                                      \n Minimum = 3034922.21 at element 0.                                      \n\n   *** ELEMENT MATRIX FORMULATION TIMES\n     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP\n\n        1        64  SHELL281      0.000   0.000000\n Time at end of element matrix formulation CP = 0.                       \n\n DISTRIBUTED SPARSE MATRIX DIRECT SOLVER.\n  Number of equations =        1199,    Maximum wavefront =      0\n  Memory available (MB) =    0.0    ,  Memory required (MB) =    0.0    \n\n Distributed sparse solver maximum pivot= 0 at node 0 .                  \n Distributed sparse solver minimum pivot= 0 at node 0 .                  \n Distributed sparse solver minimum pivot in absolute value= 0 at node 0  \n .                                                                       \n\n   *** ELEMENT RESULT CALCULATION TIMES\n     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP\n\n        1        64  SHELL281      0.000   0.000000\n\n   *** NODAL LOAD CALCULATION TIMES\n     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP\n\n        1        64  SHELL281      0.000   0.000000\n *** LOAD STEP     1   SUBSTEP     1  COMPLETED.    CUM ITER =      1\n *** TIME =   1.00000         TIME INC =   1.00000      NEW TRIANG MATRIX'
+    '*****  ANSYS SOLVE    COMMAND  *****\n\n TRANSFER SOLID MODEL BOUNDARY CONDITIONS TO FINITE ELEMENT MODEL\n      FORCES         TRANSFERRED FROM KEYPOINTS     =      1\n\n *** NOTE ***                            CP =       0.000   TIME= 00:00:00\n There is no title defined for this analysis.                            \n\n *** SELECTION OF ELEMENT TECHNOLOGIES FOR APPLICABLE ELEMENTS ***\n                ---GIVE SUGGESTIONS ONLY---\n\n ELEMENT TYPE         1 IS SHELL281. IT IS ASSOCIATED WITH ELASTOPLASTIC \n MATERIALS ONLY. KEYOPT(8)=2 IS SUGGESTED.\n\n\n   *****ANSYS VERIFICATION RUN ONLY*****\n     DO NOT USE RESULTS FOR PRODUCTION\n\n                       S O L U T I O N   O P T I O N S\n\n   PROBLEM DIMENSIONALITY. . . . . . . . . . . . .3-D                  \n   DEGREES OF FREEDOM. . . . . . UX   UY   UZ   ROTX ROTY ROTZ\n   ANALYSIS TYPE . . . . . . . . . . . . . . . . .STATIC (STEADY-STATE)\n   GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  \n\n *** NOTE ***                            CP =       0.000   TIME= 00:00:00\n Present time 0 is less than or equal to the previous time.  Time will   \n default to 1.                                                           \n\n *** NOTE ***                            CP =       0.000   TIME= 00:00:00\n The conditions for direct assembly have been met.  No .emat or .erot    \n files will be produced.                                                 \n\n                      L O A D   S T E P   O P T I O N S\n\n   LOAD STEP NUMBER. . . . . . . . . . . . . . . .     1\n   TIME AT END OF THE LOAD STEP. . . . . . . . . .  1.0000    \n   NUMBER OF SUBSTEPS. . . . . . . . . . . . . . .     1\n   STEP CHANGE BOUNDARY CONDITIONS . . . . . . . .    NO\n   PRINT OUTPUT CONTROLS . . . . . . . . . . . . .NO PRINTOUT\n   DATABASE OUTPUT CONTROLS. . . . . . . . . . . .ALL DATA WRITTEN\n                                                  FOR THE LAST SUBSTEP\n\n\n *** NOTE ***                            CP =       0.000   TIME= 00:00:00\n Predictor is ON by default for structural elements with rotational      \n degrees of freedom.  Use the PRED,OFF command to turn the predictor     \n OFF if it adversely affects the convergence.                            \n\n\n Range of element maximum matrix coefficients in global coordinates\n Maximum = 3034922.21 at element 0.                                      \n Minimum = 3034922.21 at element 0.                                      \n\n   *** ELEMENT MATRIX FORMULATION TIMES\n     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP\n\n        1        64  SHELL281      0.000   0.000000\n Time at end of element matrix formulation CP = 0.                       \n\n SPARSE MATRIX DIRECT SOLVER.\n  Number of equations =        1199,    Maximum wavefront =      0\n  Memory available (MB) =    0.0    ,  Memory required (MB) =    0.0    \n\n Sparse solver maximum pivot= 0 at node 0 .                              \n Sparse solver minimum pivot= 0 at node 0 .                              \n Sparse solver minimum pivot in absolute value= 0 at node 0 .            \n\n   *** ELEMENT RESULT CALCULATION TIMES\n     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP\n\n        1        64  SHELL281      0.000   0.000000\n\n   *** NODAL LOAD CALCULATION TIMES\n     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP\n\n        1        64  SHELL281      0.000   0.000000\n *** LOAD STEP     1   SUBSTEP     1  COMPLETED.    CUM ITER =      1\n *** TIME =   1.00000         TIME INC =   1.00000      NEW TRIANG MATRIX'
 
 
 
@@ -1390,9 +1320,9 @@ Get the the radial displacement at the node where force F is applied.
 
  .. code-block:: none
 
-    /home/alex/python/pyvista_venv3.8/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
       warnings.warn(
-    /home/alex/python/pyvista_venv3.8/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
       warnings.warn(
 
 
@@ -1459,7 +1389,7 @@ and :math:`\delta_{\mathrm{shell281}}` is 0.1139.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.988 seconds)
+   **Total running time of the script:** ( 0 minutes  3.228 seconds)
 
 
 .. _sphx_glr_download_examples_06-verif-manual_vm-006-pinched_cylinder.py:

@@ -4,8 +4,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Python UPF Examples &#8212; ansys.mapdl.core 0.60.4 documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Python UPF Examples &#8212; ansys.mapdl.core 0.60.5 documentation</title>
     
   <link href="../../../_static/css/theme.css" rel="stylesheet">
   <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -365,7 +366,7 @@
               
               <div>
                 
-  <div class="section" id="python-upf-examples">
+  <section id="python-upf-examples">
 <span id="id1"></span><h1>Python UPF Examples<a class="headerlink" href="#python-upf-examples" title="Permalink to this headline">¶</a></h1>
 <p>The following Python UPF Examples are available:</p>
 <ul class="simple">
@@ -373,13 +374,13 @@
 <li><p><a class="reference internal" href="#example-python-usrshift-subroutine">2. Example: Python UsrShift Subroutine</a></p></li>
 <li><p><a class="reference internal" href="#example-python-userhyper-subroutine">3. Example: Python UserHyper Subroutine</a></p></li>
 </ul>
-<div class="section" id="example-python-usermat-subroutine">
+<section id="example-python-usermat-subroutine">
 <h2>1. Example: Python <cite>UserMat</cite> Subroutine<a class="headerlink" href="#example-python-usermat-subroutine" title="Permalink to this headline">¶</a></h2>
 <p>This example simulates a block modeled with 3-D elements. The
 <cite>usermat.py</cite> user material is equivalent to linear elastic.
 The block is under uniaxial compression. The final deformation is compared with the
 theoretical result.</p>
-<div class="section" id="input-data">
+<section id="input-data">
 <h3>1.1. Input Data<a class="headerlink" href="#input-data" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>/batch,list
 /title,upf-py1s, test usermat.py with 3-D elements
@@ -435,8 +436,8 @@ finish
 /exit,nosave
 </pre></div>
 </div>
-</div>
-<div class="section" id="usermat-py">
+</section>
+<section id="usermat-py">
 <h3>1.2. <cite>usermat.py</cite><a class="headerlink" href="#usermat-py" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">grpc</span>
 <span class="kn">import</span> <span class="nn">sys</span>
@@ -570,15 +571,15 @@ finish
     <span class="n">upf</span><span class="o">.</span><span class="n">launch</span><span class="p">(</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="example-python-usrshift-subroutine">
+</section>
+</section>
+<section id="example-python-usrshift-subroutine">
 <h2>2. Example: Python <cite>UsrShift</cite> Subroutine<a class="headerlink" href="#example-python-usrshift-subroutine" title="Permalink to this headline">¶</a></h2>
 <p>This example describes a block of Prony viscoplastic material with a user-defined
 shift function following a Tool-Narayanaswamy shift function. Uniaxial tension is
 applied on one end and held for 15 seconds with a constant 280 K uniform
 temperature. The final stress is obtained to check stress relaxation.</p>
-<div class="section" id="id2">
+<section id="id2">
 <h3>2.1. Input Data<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>/batch,list
 /title,upf-py10s, test usrshift.py
@@ -678,8 +679,8 @@ finish
 /exit,nosave
 </pre></div>
 </div>
-</div>
-<div class="section" id="usrshift-py">
+</section>
+<section id="usrshift-py">
 <h3>2.2. <cite>usrshift.py</cite><a class="headerlink" href="#usrshift-py" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">grpc</span>
 <span class="kn">import</span> <span class="nn">sys</span>
@@ -725,15 +726,15 @@ finish
     <span class="n">upf</span><span class="o">.</span><span class="n">launch</span><span class="p">(</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="example-python-userhyper-subroutine">
+</section>
+</section>
+<section id="example-python-userhyper-subroutine">
 <h2>3. Example: Python <cite>UserHyper</cite> Subroutine<a class="headerlink" href="#example-python-userhyper-subroutine" title="Permalink to this headline">¶</a></h2>
 <p>This example models a block under simple uniaxial tension. The block is made of a
 user-defined hyper material that is identical to Arruda-Boyce Hyperelasticity. Large
 deformation effects are included. The final stress is printed out to compare against
 the reference.</p>
-<div class="section" id="id3">
+<section id="id3">
 <h3>3.1. Input Data<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">BATCH</span><span class="p">,</span><span class="n">LIST</span>
 <span class="o">/</span><span class="n">title</span><span class="p">,</span> <span class="n">upf</span><span class="o">-</span><span class="n">py16s</span><span class="p">,</span> <span class="n">test</span> <span class="n">UserHyper</span><span class="o">.</span><span class="n">py</span> <span class="k">with</span> <span class="n">MAPDL</span>
@@ -794,8 +795,8 @@ the reference.</p>
 <span class="o">/</span><span class="n">exit</span><span class="p">,</span><span class="n">nosave</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="userhyper-py">
+</section>
+<section id="userhyper-py">
 <h3>3.2. <cite>userhyper.py</cite><a class="headerlink" href="#userhyper-py" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">grpc</span>
 <span class="kn">import</span> <span class="nn">sys</span>
@@ -875,9 +876,9 @@ the reference.</p>
     <span class="n">upf</span><span class="o">.</span><span class="n">launch</span><span class="p">(</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
               </div>
@@ -901,7 +902,7 @@ the reference.</p>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.2.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br>
 </p>
     </div>
     

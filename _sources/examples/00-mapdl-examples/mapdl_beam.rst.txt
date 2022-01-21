@@ -99,9 +99,10 @@ Create nodes within MAPDL
 
 
 
-.. image:: /examples/00-mapdl-examples/images/sphx_glr_mapdl_beam_001.png
-    :alt: mapdl beam
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-mapdl-examples/images/sphx_glr_mapdl_beam_001.png
+   :alt: mapdl beam
+   :srcset: /examples/00-mapdl-examples/images/sphx_glr_mapdl_beam_001.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -170,9 +171,8 @@ are sequential
     LIST ALL SELECTED ELEMENTS.  (LIST NODES)
 
      *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2021 R2          21.2BETA ***
-     DISTRIBUTED Ansys Mechanical Enterprise Solver                
-
-     00000000  VERSION=LINUX x64     17:03:26  DEC 03, 2021 CP=      4.650
+     Ansys Mechanical Enterprise                       
+     00000000  VERSION=LINUX x64     15:28:50  JAN 21, 2022 CP=     71.929
 
                                                                                
 
@@ -315,13 +315,9 @@ run the static analysis
 
  .. code-block:: none
 
-    *** NOTE ***                            CP =       4.657   TIME= 17:03:26
-     The automatic domain decomposition logic has selected the MESH domain   
-     decomposition method with 2 processes per solution.                     
+    *****  ANSYS SOLVE    COMMAND  *****
 
-     *****  ANSYS SOLVE    COMMAND  *****
-
-     *** NOTE ***                            CP =       4.657   TIME= 17:03:26
+     *** NOTE ***                            CP =      71.934   TIME= 15:28:50
      There is no title defined for this analysis.                            
 
      *** SELECTION OF ELEMENT TECHNOLOGIES FOR APPLICABLE ELEMENTS ***
@@ -335,9 +331,8 @@ run the static analysis
 
 
      *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2021 R2          21.2BETA ***
-     DISTRIBUTED Ansys Mechanical Enterprise Solver                
-
-     00000000  VERSION=LINUX x64     17:03:26  DEC 03, 2021 CP=      4.658
+     Ansys Mechanical Enterprise                       
+     00000000  VERSION=LINUX x64     15:28:50  JAN 21, 2022 CP=     71.935
 
                                                                                
 
@@ -353,23 +348,13 @@ run the static analysis
        ANALYSIS TYPE . . . . . . . . . . . . . . . . .STATIC (STEADY-STATE)
        GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  
 
-     *** NOTE ***                            CP =       4.658   TIME= 17:03:26
+     *** NOTE ***                            CP =      71.935   TIME= 15:28:50
      Present time 0 is less than or equal to the previous time.  Time will   
      default to 1.                                                           
 
-     *** NOTE ***                            CP =       4.658   TIME= 17:03:26
+     *** NOTE ***                            CP =      71.935   TIME= 15:28:50
      The conditions for direct assembly have been met.  No .emat or .erot    
      files will be produced.                                                 
-
-  
-  
-         D I S T R I B U T E D   D O M A I N   D E C O M P O S E R
-  
-      ...Number of elements: 22
-      ...Number of nodes:    23
-      ...Decompose to 2 CPU domains
-      ...Element load balance ratio =     1.000
-
 
                           L O A D   S T E P   O P T I O N S
 
@@ -384,63 +369,57 @@ run the static analysis
 
      SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
 
-     *** NOTE ***                            CP =       4.664   TIME= 17:03:26
+     *** NOTE ***                            CP =      71.940   TIME= 15:28:50
      Predictor is ON by default for structural elements with rotational      
      degrees of freedom.  Use the PRED,OFF command to turn the predictor     
      OFF if it adversely affects the convergence.                            
 
 
      Range of element maximum matrix coefficients in global coordinates
-     Maximum = 2.504767151E+10 at element 11.                                
-     Minimum = 2.504767151E+10 at element 11.                                
+     Maximum = 2.504767151E+10 at element 22.                                
+     Minimum = 2.504767151E+10 at element 22.                                
 
        *** ELEMENT MATRIX FORMULATION TIMES
          TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-            1        22  BEAM188       0.002   0.000099
-     Time at end of element matrix formulation CP = 4.66742086.              
+            1        22  BEAM188       0.009   0.000396
+     Time at end of element matrix formulation CP = 71.945488.               
 
-     DISTRIBUTED SPARSE MATRIX DIRECT SOLVER.
+     SPARSE MATRIX DIRECT SOLVER.
       Number of equations =          44,    Maximum wavefront =     12
+      Memory allocated for solver              =     0.065 MB
+      Memory required for in-core solution     =     0.062 MB
+      Memory required for out-of-core solution =     0.062 MB
 
-      Local memory allocated for solver              =      0.188 MB
-      Local memory required for in-core solution     =      0.180 MB
-      Local memory required for out-of-core solution =      0.180 MB
-
-      Total memory allocated for solver              =      0.374 MB
-      Total memory required for in-core solution     =      0.357 MB
-      Total memory required for out-of-core solution =      0.357 MB
-
-     *** NOTE ***                            CP =       4.676   TIME= 17:03:26
-     The Distributed Sparse Matrix Solver is currently running in the        
-     in-core memory mode.  This memory mode uses the most amount of memory   
-     in order to avoid using the hard drive as much as possible, which most  
-     often results in the fastest solution time.  This mode is recommended   
-     if enough physical memory is present to accommodate all of the solver   
+     *** NOTE ***                            CP =      71.949   TIME= 15:28:50
+     The Sparse Matrix Solver is currently running in the in-core memory     
+     mode.  This memory mode uses the most amount of memory in order to      
+     avoid using the hard drive as much as possible, which most often        
+     results in the fastest solution time.  This mode is recommended if      
+     enough physical memory is present to accommodate all of the solver      
      data.                                                                   
-     Distributed sparse solver maximum pivot= 5.009534302E+10 at node 4      
-     ROTY.                                                                   
-     Distributed sparse solver minimum pivot= 861490.522 at node 12 UZ.      
-     Distributed sparse solver minimum pivot in absolute value= 861490.522   
-     at node 12 UZ.                                                          
+     Sparse solver maximum pivot= 5.009534302E+10 at node 8 ROTY.            
+     Sparse solver minimum pivot= 2691965.06 at node 12 UZ.                  
+     Sparse solver minimum pivot in absolute value= 2691965.06 at node 12    
+     UZ.                                                                     
 
        *** ELEMENT RESULT CALCULATION TIMES
          TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-            1        22  BEAM188       0.013   0.000570
+            1        22  BEAM188       0.027   0.001225
 
        *** NODAL LOAD CALCULATION TIMES
          TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-            1        22  BEAM188       0.000   0.000019
+            1        22  BEAM188       0.001   0.000050
      *** LOAD STEP     1   SUBSTEP     1  COMPLETED.    CUM ITER =      1
      *** TIME =   1.00000         TIME INC =   1.00000      NEW TRIANG MATRIX
 
 
      *** ANSYS BINARY FILE STATISTICS
       BUFFER SIZE USED= 16384
-            0.062 MB WRITTEN ON ASSEMBLED MATRIX FILE: file0.full
-            0.500 MB WRITTEN ON RESULTS FILE: file0.rst
+            0.062 MB WRITTEN ON ASSEMBLED MATRIX FILE: file.full
+            0.625 MB WRITTEN ON RESULTS FILE: file.rst
 
 
 
@@ -448,7 +427,7 @@ run the static analysis
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.755 seconds)
+   **Total running time of the script:** ( 0 minutes  0.495 seconds)
 
 
 .. _sphx_glr_download_examples_00-mapdl-examples_mapdl_beam.py:

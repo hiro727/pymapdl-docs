@@ -4,8 +4,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beam Stresses and Deflections &#8212; ansys.mapdl.core 0.60.4 documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Beam Stresses and Deflections &#8212; ansys.mapdl.core 0.60.5 documentation</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -498,7 +499,7 @@
 <p>Click <a class="reference internal" href="#sphx-glr-download-examples-06-verif-manual-vm-002-beam-stresses-and-deflections-py"><span class="std std-ref">here</span></a>
 to download the full example code</p>
 </div>
-<div class="sphx-glr-example-title section" id="beam-stresses-and-deflections">
+<section class="sphx-glr-example-title" id="beam-stresses-and-deflections">
 <span id="ref-vm2-example"></span><span id="sphx-glr-examples-06-verif-manual-vm-002-beam-stresses-and-deflections-py"></span><h1>Beam Stresses and Deflections<a class="headerlink" href="#beam-stresses-and-deflections" title="Permalink to this headline">¶</a></h1>
 <dl>
 <dt>Problem Description:</dt><dd><ul class="simple">
@@ -561,7 +562,7 @@ by the formulas of the transversally loaded beam:
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># sphinx_gallery_thumbnail_path = &#39;_static/vm2_setup.png&#39;</span>
 </pre></div>
 </div>
-<div class="section" id="start-mapdl">
+<section id="start-mapdl">
 <h2>Start MAPDL<a class="headerlink" href="#start-mapdl" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ansys.mapdl.core</span> <span class="kn">import</span> <span class="n">launch_mapdl</span>
 
@@ -578,8 +579,8 @@ by the formulas of the transversally loaded beam:
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>&#39;*****ANSYS VERIFICATION RUN ONLY*****\n     DO NOT USE RESULTS FOR PRODUCTION\n\n          ***** ANSYS ANALYSIS DEFINITION (PREP7) *****&#39;
 </pre></div>
 </div>
-</div>
-<div class="section" id="define-element-type">
+</section>
+<section id="define-element-type">
 <h2>Define Element Type<a class="headerlink" href="#define-element-type" title="Permalink to this headline">¶</a></h2>
 <p>Set up the element type (a beam-type).</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Type of analysis: Static.</span>
@@ -602,8 +603,8 @@ by the formulas of the transversally loaded beam:
 <a href="https://docs.python.org/dev/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">_</span></a> <span class="o">=</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">keyopt</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="define-material">
+</section>
+<section id="define-material">
 <h2>Define Material<a class="headerlink" href="#define-material" title="Permalink to this headline">¶</a></h2>
 <p>Set up the material.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mapdl</span><span class="o">.</span><span class="n">mp</span><span class="p">(</span><span class="s2">&quot;EX&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">30E6</span><span class="p">)</span>
@@ -612,10 +613,7 @@ by the formulas of the transversally loaded beam:
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>LIST MATERIALS        1 TO        1 BY        1
-  PROPERTY= ALL
-
- MATERIAL NUMBER        1
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>MATERIAL NUMBER        1
 
       TEMP        EX
                0.3000000E+08
@@ -624,8 +622,8 @@ by the formulas of the transversally loaded beam:
                0.3000000
 </pre></div>
 </div>
-</div>
-<div class="section" id="define-section">
+</section>
+<section id="define-section">
 <h2>Define Section<a class="headerlink" href="#define-section" title="Permalink to this headline">¶</a></h2>
 <p>Set up the cross-section properties for a beam element.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><a href="https://docs.python.org/dev/library/functions.html#float" title="builtins.float" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">w_f</span></a> <span class="o">=</span> <span class="mf">1.048394965</span>
@@ -639,8 +637,8 @@ by the formulas of the transversally loaded beam:
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>&#39;SECTION ID NUMBER IS:            1\n   BEAM SECTION TYPE IS:     I Section       \n   BEAM SECTION NAME IS:     ISection\n   COMPUTED BEAM SECTION DATA SUMMARY:\n    Area                 =  50.650    \n    Iyy                  =  7892.0    \n    Iyz                  = 0.76051E-12\n    Izz                  =  590.47    \n    Warping Constant     = 0.12403E+06\n    Torsion Constant     =  14.962    \n    Centroid Y           = 0.10702E-14\n    Centroid Z           =  15.048    \n    Shear Center Y       =-0.96799E-12\n    Shear Center Z       =  15.048    \n    Shear Correction-xy  = 0.54626    \n    Shear Correction-yz  = 0.20960E-12\n    Shear Correction-xz  = 0.38629    \n                 \n    Beam Section is offset to CENTROID of cross section&#39;
 </pre></div>
 </div>
-</div>
-<div class="section" id="define-geometry">
+</section>
+<section id="define-geometry">
 <h2>Define Geometry<a class="headerlink" href="#define-geometry" title="Permalink to this headline">¶</a></h2>
 <p>Set up the nodes and elements. Create nodes then create elements
 between nodes.</p>
@@ -656,12 +654,7 @@ between nodes.</p>
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>LIST ALL SELECTED NODES.   DSYS=      0
-   *****ANSYS VERIFICATION RUN ONLY*****
-     DO NOT USE RESULTS FOR PRODUCTION
-
-    NODE        X             Y             Z           THXY     THYZ     THZX
-        1   0.0000        0.0000        0.0000          0.00     0.00     0.00
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>1   0.0000        0.0000        0.0000          0.00     0.00     0.00
         2   120.00        0.0000        0.0000          0.00     0.00     0.00
         3   240.00        0.0000        0.0000          0.00     0.00     0.00
         4   360.00        0.0000        0.0000          0.00     0.00     0.00
@@ -680,26 +673,24 @@ between nodes.</p>
 <span class="n">mapdl</span><span class="o">.</span><span class="n">eplot</span><span class="p">(</span><span class="n">show_node_numbering</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">line_width</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">cpos</span><span class="o">=</span><span class="s2">&quot;xy&quot;</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="vm 002 beam stresses and deflections" class="sphx-glr-single-img" src="../../_images/sphx_glr_vm-002-beam_stresses_and_deflections_001.png" />
-<p class="sphx-glr-script-out">Out:</p>
+<img src="../../_images/sphx_glr_vm-002-beam_stresses_and_deflections_001.png" srcset="../../_images/sphx_glr_vm-002-beam_stresses_and_deflections_001.png" alt="vm 002 beam stresses and deflections" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>LIST ALL SELECTED ELEMENTS.  (LIST NODES)
-   *****ANSYS VERIFICATION RUN ONLY*****
-     DO NOT USE RESULTS FOR PRODUCTION
-
-    ELEM MAT TYP REL ESY SEC        NODES
-
        1   1   1   1   0   1      1     2     6
        2   1   1   1   0   1      2     3     6
        3   1   1   1   0   1      3     4     6
        4   1   1   1   0   1      4     5     6
+/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+  warnings.warn(
 
 [(240.0, 0.0, 927.2887932375056),
  (240.0, 0.0, 0.0),
  (0.0, 1.0, 0.0)]
 </pre></div>
 </div>
-</div>
-<div class="section" id="define-boundary-conditions">
+</section>
+<section id="define-boundary-conditions">
 <h2>Define Boundary Conditions<a class="headerlink" href="#define-boundary-conditions" title="Permalink to this headline">¶</a></h2>
 <p>Application of boundary conditions (BC).</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># BC for the beams seats</span>
@@ -718,8 +709,8 @@ between nodes.</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>&#39;ALL SELECT   FOR ITEM=NODE COMPONENT=    \n  IN RANGE         1 TO          6 STEP          1\n\n          6  NODES (OF          6  DEFINED) SELECTED BY NSEL  COMMAND.&#39;
 </pre></div>
 </div>
-</div>
-<div class="section" id="define-distributed-loads">
+</section>
+<section id="define-distributed-loads">
 <h2>Define Distributed Loads<a class="headerlink" href="#define-distributed-loads" title="Permalink to this headline">¶</a></h2>
 <p>Apply a distributed force of <span class="math notranslate nohighlight">\(w = (10000/12) lb/in\)</span>
 in the y-direction.</p>
@@ -736,8 +727,8 @@ in the y-direction.</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>&#39;***** ROUTINE COMPLETED *****  CP =         0.000&#39;
 </pre></div>
 </div>
-</div>
-<div class="section" id="solve">
+</section>
+<section id="solve">
 <h2>Solve<a class="headerlink" href="#solve" title="Permalink to this headline">¶</a></h2>
 <p>Enter solution mode and solve the system. Print the solver output.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mapdl</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="s2">&quot;/SOLU&quot;</span><span class="p">)</span>
@@ -784,16 +775,6 @@ in the y-direction.</p>
  8 internal nodes are used for quadratic and/or cubic options of
  BEAM188, PIPE288, and/or SHELL208.
 
-
-
-     D I S T R I B U T E D   D O M A I N   D E C O M P O S E R
-
-  ...Number of elements: 4
-  ...Number of nodes:    14
-  ...Decompose to 0 CPU domains
-  ...Element load balance ratio =     0.000
-
-
                       L O A D   S T E P   O P T I O N S
 
    LOAD STEP NUMBER. . . . . . . . . . . . . . . .     1
@@ -821,14 +802,13 @@ in the y-direction.</p>
         1         4  BEAM188       0.000   0.000000
  Time at end of element matrix formulation CP = 0.
 
- DISTRIBUTED SPARSE MATRIX DIRECT SOLVER.
+ SPARSE MATRIX DIRECT SOLVER.
   Number of equations =          60,    Maximum wavefront =      0
   Memory available (MB) =    0.0    ,  Memory required (MB) =    0.0
 
- Distributed sparse solver maximum pivot= 0 at node 0 .
- Distributed sparse solver minimum pivot= 0 at node 0 .
- Distributed sparse solver minimum pivot in absolute value= 0 at node 0
- .
+ Sparse solver maximum pivot= 0 at node 0 .
+ Sparse solver minimum pivot= 0 at node 0 .
+ Sparse solver minimum pivot in absolute value= 0 at node 0 .
 
    *** ELEMENT RESULT CALCULATION TIMES
      TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
@@ -843,8 +823,8 @@ in the y-direction.</p>
  *** TIME =   1.00000         TIME INC =   1.00000      NEW TRIANG MATRIX
 </pre></div>
 </div>
-</div>
-<div class="section" id="post-processing">
+</section>
+<section id="post-processing">
 <h2>Post-processing<a class="headerlink" href="#post-processing" title="Permalink to this headline">¶</a></h2>
 <p>Enter post-processing. To get the stress and deflection results
 from the middle node and cross-section of the beam we can use
@@ -860,8 +840,8 @@ from the middle node and cross-section of the beam we can use
 <a href="https://docs.python.org/dev/library/functions.html#float" title="builtins.float" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">mid_node_uy</span></a> <span class="o">=</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">get_value</span><span class="p">(</span><span class="n">entity</span><span class="o">=</span><span class="s1">&#39;NODE&#39;</span><span class="p">,</span> <span class="n">entnum</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">item1</span><span class="o">=</span><span class="s1">&#39;u&#39;</span><span class="p">,</span> <span class="n">it1num</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="check-results">
+</section>
+<section id="check-results">
 <h2>Check Results<a class="headerlink" href="#check-results" title="Permalink to this headline">¶</a></h2>
 <p>Now that we have the results we can compare the nodal displacement and stress
 experienced by middle node of the beam to the known stresses -11,400 psi and
@@ -895,7 +875,7 @@ experienced by middle node of the beam to the known stresses -11,400 psi and
 ----------------------------------------------------------------------------------
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  3.647 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  0.530 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-examples-06-verif-manual-vm-002-beam-stresses-and-deflections-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../../_downloads/18a1191ceed763ef060bbea88ec8aad8/vm-002-beam_stresses_and_deflections.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">vm-002-beam_stresses_and_deflections.py</span></code></a></p>
@@ -905,8 +885,8 @@ experienced by middle node of the beam to the known stresses -11,400 psi and
 </div>
 </div>
 <p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
-</div>
-</div>
+</section>
+</section>
 
 
               </div>
@@ -930,7 +910,7 @@ experienced by middle node of the beam to the known stresses -11,400 psi and
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.2.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br>
 </p>
     </div>
     

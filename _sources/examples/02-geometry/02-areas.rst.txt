@@ -50,9 +50,9 @@ using Pythonic PREP7 area commands.
 
  .. code-block:: none
 
-    Product:             Ansys Mechanical Enterprise Solver
+    Product:             Ansys Mechanical Enterprise
     MAPDL Version:       21.2
-    ansys.mapdl Version: 0.60.dev0
+    ansys.mapdl Version: 0.60.5
 
 
 
@@ -79,9 +79,10 @@ Create a simple triangle in the XY plane using three keypoints.
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_02-areas_001.png
-    :alt: 02 areas
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_02-areas_001.png
+   :alt: 02 areas
+   :srcset: /examples/02-geometry/images/sphx_glr_02-areas_001.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -90,6 +91,10 @@ Create a simple triangle in the XY plane using three keypoints.
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+      warnings.warn(
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
     [(0.5, 0.5, 2.7320508075688776),
      (0.5, 0.5, 0.0),
@@ -125,9 +130,10 @@ Create an area from four lines.
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_02-areas_002.png
-    :alt: 02 areas
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_02-areas_002.png
+   :alt: 02 areas
+   :srcset: /examples/02-geometry/images/sphx_glr_02-areas_002.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -136,6 +142,10 @@ Create an area from four lines.
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+      warnings.warn(
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
     [(0.5, 0.5, 2.7320508075688776),
      (0.5, 0.5, 0.0),
@@ -169,9 +179,10 @@ Drag a circle between two keypoints to create an area
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_02-areas_003.png
-    :alt: 02 areas
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_02-areas_003.png
+   :alt: 02 areas
+   :srcset: /examples/02-geometry/images/sphx_glr_02-areas_003.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -180,6 +191,10 @@ Drag a circle between two keypoints to create an area
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+      warnings.warn(
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
     [(2.431851652578137, 2.431851652578137, 2.431851652578137),
      (0.5, 0.5, 0.5),
@@ -209,9 +224,10 @@ Subtract a ``0.5 x 0.5`` rectangle from a ``1 x 1`` rectangle.
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_02-areas_004.png
-    :alt: 02 areas
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_02-areas_004.png
+   :alt: 02 areas
+   :srcset: /examples/02-geometry/images/sphx_glr_02-areas_004.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -220,6 +236,10 @@ Subtract a ``0.5 x 0.5`` rectangle from a ``1 x 1`` rectangle.
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+      warnings.warn(
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
     [(0.5, 0.5, 2.7320508075688776),
      (0.5, 0.5, 0.0),
@@ -285,8 +305,12 @@ individual meshes.
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+      warnings.warn(
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
-    [UnstructuredGrid (0x7fa43faa5e80)
+    [UnstructuredGrid (0x7fd809467e20)
       N Cells:	12
       N Points:	24
       X Bounds:	0.000e+00, 1.000e+00
@@ -317,6 +341,17 @@ Merged Area Geometry
 
 
 
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+      warnings.warn(
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
 
 .. raw:: html
@@ -509,9 +544,10 @@ camera direction from the following:
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_02-areas_005.png
-    :alt: 02 areas
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_02-areas_005.png
+   :alt: 02 areas
+   :srcset: /examples/02-geometry/images/sphx_glr_02-areas_005.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -520,9 +556,13 @@ camera direction from the following:
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+      warnings.warn(
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
-    [(16.376938764891378, 17.744265285296507, 10.953718511224873),
-     (5.423220253666507, 6.7905467740716325, 0.0),
+    [(16.929777932085507, 14.761903895344563, 9.707270474489563),
+     (7.222507457595944, 5.054633420855001, 0.0),
      (0.0, 0.0, 1.0)]
 
 
@@ -530,7 +570,7 @@ camera direction from the following:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.782 seconds)
+   **Total running time of the script:** ( 0 minutes  3.084 seconds)
 
 
 .. _sphx_glr_download_examples_02-geometry_02-areas.py:

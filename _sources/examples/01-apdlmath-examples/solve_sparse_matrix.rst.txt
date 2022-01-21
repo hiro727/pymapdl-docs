@@ -89,7 +89,7 @@ List the files in current directory
  .. code-block:: none
 
 
-    ['cleanup-ansys-ds9-503925.sh', 'PRSMEMB.rst', 'PRSMEMB0.rst', 'SCRATCH', 'PRSMEMB003.jpg', 'PRSMEMB0.emat', 'file0.log', 'file1.out', 'PRSMEMB002.jpg', '_input_tmp_.inp', 'file1.page', 'PRSMEMB.full', 'file1.err', 'PRSMEMB.emat', 'vm153.vrt', 'PRSMEMB1.rst', 'PRSMEMB.DSP', 'PRSMEMB001.jpg', 'PRSMEMB1.mode', 'file0.page', 'PRSMEMB0.esav', 'PRSMEMB0.full', 'file.lock', 'PRSMEMB.mode', '_input_tmp_.out', 'PRSMEMB1.full', 'file1.log', 'TABLE_2', 'PRSMEMB000.jpg', 'file0.err', 'PRSMEMB0.mode', 'PRSMEMB.mntr', 'PRSMEMB1.emat', 'PRSMEMB.esav', 'PRSMEMB1.esav', 'TABLE_1', 'SOLVIT.MAC']
+    ['HexBeam.cdb', 'PRSMEMB.DSP', 'PRSMEMB.emat', 'PRSMEMB.esav', 'PRSMEMB.full', 'PRSMEMB.mntr', 'PRSMEMB.mode', 'PRSMEMB.rst', 'PRSMEMB000.jpg', 'PRSMEMB001.jpg', 'PRSMEMB002.jpg', 'PRSMEMB003.jpg', 'PRSMEMB004.jpg', 'PRSMEMB005.jpg', 'PRSMEMB006.jpg', 'PRSMEMB007.jpg', 'PRSMEMB008.jpg', 'PRSMEMB009.jpg', 'PRSMEMB010.jpg', 'PRSMEMB011.jpg', 'SCRATCH', 'SOLVIT.MAC', 'TABLE_1', 'TABLE_2', '__tmp_sys_out__', '_input_tmp_.inp', '_input_tmp_.out', '_tmp.iges', 'anaconda-post.log', 'anstmp', 'ansys_inc', 'bin', 'bracket.iges', 'dev', 'etc', 'file.DSP', 'file.err', 'file.esav', 'file.full', 'file.ldhi', 'file.lock', 'file.log', 'file.mlv', 'file.mntr', 'file.mode', 'file.page', 'file.r001', 'file.rdb', 'file.rth', 'file.stat', 'home', 'iossltpuoq.txt', 'lib', 'lib64', 'media', 'mnt', 'opt', 'ovjsprbcub.txt', 'proc', 'root', 'run', 'sbin', 'srv', 'sys', 'tmp', 'tmp.cdb', 'tmp_figtdbusmq.inp', 'tmp_hvzgilkwea.inp', 'tmp_ifmlllefti.inp', 'tmp_lgxbcahgtv.inp', 'tmp_mqhovoflyz.inp', 'tmp_ogdbbftmnm.inp', 'tmp_ohcvwlfwoo.inp', 'tmp_pywntdzgix.inp', 'tmp_sasthymlka.inp', 'usr', 'var', 'vm1.dat', 'vm1.vrt', 'vm153.dat', 'vm153.vrt', 'wing.dat']
 
 
 
@@ -258,7 +258,7 @@ Print the **norm** of the solution vector
  .. code-block:: none
 
 
-    5.8159282970300556e-08
+    5.815928297030522e-08
 
 
 
@@ -287,7 +287,7 @@ We check the accuracy of the solution, by verifying that
 
  .. code-block:: none
 
-    Residual error: 1.5719444531467088e-15
+    Residual error: 1.5567716901067835e-15
 
 
 
@@ -317,11 +317,11 @@ Summary of all allocated APDLMath Objects
 
       Name                   Type            Mem. (MB)       Dims            Workspace
 
-       HSNHXX                SMAT            0.011           [126:126]               1
-       KLOSLD                VEC             0.001           126             1
-       PTOKWK                VEC             0.001           126             1
-       UYSGBD                VEC             0.001           126             1
-       XJOUQO                LSENGINE        --              --              1
+       FGGJCF                SMAT            0.011           [126:126]               1
+       BVKXET                VEC             0.001           126             1
+       IKMRNU                VEC             0.001           126             1
+       MRGFFK                VEC             0.001           126             1
+       KKTXSN                LSENGINE        --              --              1
 
 
 
@@ -346,7 +346,7 @@ Delete all APDLMath Objects
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.806 seconds)
+   **Total running time of the script:** ( 0 minutes  0.661 seconds)
 
 
 .. _sphx_glr_download_examples_01-apdlmath-examples_solve_sparse_matrix.py:

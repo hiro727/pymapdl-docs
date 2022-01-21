@@ -4,8 +4,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MAPDL Element Size Transition Example &#8212; ansys.mapdl.core 0.60.4 documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>MAPDL Element Size Transition Example &#8212; ansys.mapdl.core 0.60.5 documentation</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -467,7 +468,7 @@
 <p>Click <a class="reference internal" href="#sphx-glr-download-examples-03-tips-n-tricks-01-smoothing-element-size-transitions-py"><span class="std std-ref">here</span></a>
 to download the full example code</p>
 </div>
-<div class="sphx-glr-example-title section" id="mapdl-element-size-transition-example">
+<section class="sphx-glr-example-title" id="mapdl-element-size-transition-example">
 <span id="ref-element-size-transition"></span><span id="sphx-glr-examples-03-tips-n-tricks-01-smoothing-element-size-transitions-py"></span><h1>MAPDL Element Size Transition Example<a class="headerlink" href="#mapdl-element-size-transition-example" title="Permalink to this headline">¶</a></h1>
 <p>There are many cases in which you will want to control the density of the mesh nearby
 a region of local high stresses (e.g. simulated crack, filleted bracket, etc.)  This
@@ -484,10 +485,10 @@ reduce this effect using a simple geometry.</p>
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;ansys.mapdl.core.mapdl_grpc.MapdlGrpc object at 0x7fa43fdf8790&gt;
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;ansys.mapdl.core.mapdl_grpc.MapdlGrpc object at 0x7fd80946d1c0&gt;
 </pre></div>
 </div>
-<div class="section" id="the-geometry-a-box">
+<section id="the-geometry-a-box">
 <h2>The Geometry (a box)<a class="headerlink" href="#the-geometry-a-box" title="Permalink to this headline">¶</a></h2>
 <p>This example uses very simple geometry. In this case, a 3D box with 4 sides.
 The two remaining sides are open, and we have a rectangular tube. Its
@@ -511,8 +512,8 @@ building 4 areas.</p>
 <a href="https://docs.python.org/dev/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">a3</span></a> <span class="o">=</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">a</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="mesh-size">
+</section>
+<section id="mesh-size">
 <h2>Mesh size<a class="headerlink" href="#mesh-size" title="Permalink to this headline">¶</a></h2>
 <p>We set the global mesh size to 0.7, but we’re particularly interested in
 face <code class="docutils literal notranslate"><span class="pre">a2</span></code>, so we set the element size of that face to 0.1. Then we just
@@ -529,15 +530,19 @@ for a quadrilateral mesh.</p>
 <span class="n">mapdl</span><span class="o">.</span><span class="n">eplot</span><span class="p">(</span><span class="n">show_edges</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_axes</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">line_width</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">background</span><span class="o">=</span><span class="s2">&quot;w&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="01 smoothing element size transitions" class="sphx-glr-single-img" src="../../_images/sphx_glr_01-smoothing-element-size-transitions_001.png" />
-<p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[(10.465228416603692, 10.465228416603692, 8.465228416603692),
+<img src="../../_images/sphx_glr_01-smoothing-element-size-transitions_001.png" srcset="../../_images/sphx_glr_01-smoothing-element-size-transitions_001.png" alt="01 smoothing element size transitions" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+  warnings.warn(
+
+[(10.465228416603692, 10.465228416603692, 8.465228416603692),
  (2.5, 2.5, 0.5),
  (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
-</div>
-<div class="section" id="smoothing-the-transition">
+</section>
+<section id="smoothing-the-transition">
 <h2>Smoothing the transition<a class="headerlink" href="#smoothing-the-transition" title="Permalink to this headline">¶</a></h2>
 <p>The mesh mostly looks fine, but we have quite a sharp transition in element
 size along the edges of our focus area. This is likely undesirable because
@@ -557,15 +562,19 @@ are self-evident.</p>
 <span class="n">mapdl</span><span class="o">.</span><span class="n">eplot</span><span class="p">(</span><span class="n">show_edges</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_axes</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">line_width</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">background</span><span class="o">=</span><span class="s2">&quot;w&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="01 smoothing element size transitions" class="sphx-glr-single-img" src="../../_images/sphx_glr_01-smoothing-element-size-transitions_002.png" />
-<p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[(10.465228416603692, 10.465228416603692, 8.465228416603692),
+<img src="../../_images/sphx_glr_01-smoothing-element-size-transitions_002.png" srcset="../../_images/sphx_glr_01-smoothing-element-size-transitions_002.png" alt="01 smoothing element size transitions" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+  warnings.warn(
+
+[(10.465228416603692, 10.465228416603692, 8.465228416603692),
  (2.5, 2.5, 0.5),
  (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
-</div>
-<div class="section" id="smoothing-the-transition-into-a2">
+</section>
+<section id="smoothing-the-transition-into-a2">
 <h2>Smoothing the transition into a2<a class="headerlink" href="#smoothing-the-transition-into-a2" title="Permalink to this headline">¶</a></h2>
 <p>Similarly, if we were happy to reduce the mesh size at the edges of <code class="docutils literal notranslate"><span class="pre">a2</span></code>, we
 could set the keypoint element sizes to be an intermediate value, which would
@@ -579,8 +588,14 @@ shift the main location of the size transition to within the face of <code class
 <span class="p">)</span>
 </pre></div>
 </div>
-<img alt="01 smoothing element size transitions" class="sphx-glr-single-img" src="../../_images/sphx_glr_01-smoothing-element-size-transitions_003.png" />
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  4.316 seconds)</p>
+<img src="../../_images/sphx_glr_01-smoothing-element-size-transitions_003.png" srcset="../../_images/sphx_glr_01-smoothing-element-size-transitions_003.png" alt="01 smoothing element size transitions" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+  warnings.warn(
+</pre></div>
+</div>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  1.766 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-examples-03-tips-n-tricks-01-smoothing-element-size-transitions-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../../_downloads/dd0223228197eba5e605b5ba29212e97/01-smoothing-element-size-transitions.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">01-smoothing-element-size-transitions.py</span></code></a></p>
@@ -590,8 +605,8 @@ shift the main location of the size transition to within the face of <code class
 </div>
 </div>
 <p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
-</div>
-</div>
+</section>
+</section>
 
 
               </div>
@@ -615,7 +630,7 @@ shift the main location of the size transition to within the face of <code class
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.2.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br>
 </p>
     </div>
     

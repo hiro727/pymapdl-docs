@@ -4,8 +4,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Primitives &#8212; ansys.mapdl.core 0.60.4 documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Primitives &#8212; ansys.mapdl.core 0.60.5 documentation</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -517,7 +518,7 @@
 <p>Click <a class="reference internal" href="#sphx-glr-download-examples-02-geometry-04-primitives-py"><span class="std std-ref">here</span></a>
 to download the full example code</p>
 </div>
-<div class="sphx-glr-example-title section" id="primitives">
+<section class="sphx-glr-example-title" id="primitives">
 <span id="ref-basic-geometry-primitives"></span><span id="sphx-glr-examples-02-geometry-04-primitives-py"></span><h1>Primitives<a class="headerlink" href="#primitives" title="Permalink to this headline">¶</a></h1>
 <p>This example shows how you can use PyMAPDL to create basic geometry
 using Pythonic PREP7 volume commands.</p>
@@ -531,12 +532,12 @@ using Pythonic PREP7 volume commands.</p>
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Product:             Ansys Mechanical Enterprise Solver
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Product:             Ansys Mechanical Enterprise
 MAPDL Version:       21.2
-ansys.mapdl Version: 0.60.dev0
+ansys.mapdl Version: 0.60.5
 </pre></div>
 </div>
-<div class="section" id="apdl-command-blc4">
+<section id="apdl-command-blc4">
 <h2>APDL Command: BLC4<a class="headerlink" href="#apdl-command-blc4" title="Permalink to this headline">¶</a></h2>
 <p>Create a rectangular area or block volume by corner points.</p>
 <p>Create a <code class="docutils literal notranslate"><span class="pre">0.5</span> <span class="pre">x</span> <span class="pre">0.5</span></code> rectangle starting at <code class="docutils literal notranslate"><span class="pre">(0.25,</span> <span class="pre">0.25)</span></code></p>
@@ -547,9 +548,13 @@ ansys.mapdl Version: 0.60.dev0
 <span class="n">mapdl</span><span class="o">.</span><span class="n">aplot</span><span class="p">(</span><span class="n">show_lines</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">line_width</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">show_bounds</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cpos</span><span class="o">=</span><span class="s2">&quot;xy&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="04 primitives" class="sphx-glr-single-img" src="../../_images/sphx_glr_04-primitives_001.png" />
-<p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[(0.5, 0.5, 1.366025403784439),
+<img src="../../_images/sphx_glr_04-primitives_001.png" srcset="../../_images/sphx_glr_04-primitives_001.png" alt="04 primitives" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+  warnings.warn(
+
+[(0.5, 0.5, 1.366025403784439),
  (0.5, 0.5, 0.0),
  (0.0, 1.0, 0.0)]
 </pre></div>
@@ -564,15 +569,19 @@ the block at <code class="docutils literal notranslate"><span class="pre">(0,</s
 <span class="n">mapdl</span><span class="o">.</span><span class="n">vplot</span><span class="p">(</span><span class="n">show_lines</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="04 primitives" class="sphx-glr-single-img" src="../../_images/sphx_glr_04-primitives_002.png" />
-<p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[(11.541451884327385, 13.041451884327385, 15.541451884327387),
+<img src="../../_images/sphx_glr_04-primitives_002.png" srcset="../../_images/sphx_glr_04-primitives_002.png" alt="04 primitives" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+  warnings.warn(
+
+[(11.541451884327385, 13.041451884327385, 15.541451884327387),
  (0.5, 2.0, 4.500000000000001),
  (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
-</div>
-<div class="section" id="apdl-command-blc5">
+</section>
+<section id="apdl-command-blc5">
 <h2>APDL Command: BLC5<a class="headerlink" href="#apdl-command-blc5" title="Permalink to this headline">¶</a></h2>
 <p>Create a rectangular area or block volume by center and corner points.</p>
 <p>This differs from BLC4 since this describes the center rather than
@@ -586,9 +595,13 @@ height of 0.5</p>
 <span class="n">mapdl</span><span class="o">.</span><span class="n">aplot</span><span class="p">(</span><span class="n">show_lines</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">line_width</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">show_bounds</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cpos</span><span class="o">=</span><span class="s2">&quot;xy&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="04 primitives" class="sphx-glr-single-img" src="../../_images/sphx_glr_04-primitives_003.png" />
-<p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[(0.0, 0.0, 1.3660254037844388),
+<img src="../../_images/sphx_glr_04-primitives_003.png" srcset="../../_images/sphx_glr_04-primitives_003.png" alt="04 primitives" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+  warnings.warn(
+
+[(0.0, 0.0, 1.3660254037844388),
  (0.0, 0.0, 0.0),
  (0.0, 1.0, 0.0)]
 </pre></div>
@@ -603,15 +616,19 @@ height of 0.5</p>
 <span class="n">mapdl</span><span class="o">.</span><span class="n">vplot</span><span class="p">(</span><span class="n">show_lines</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_bounds</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="04 primitives" class="sphx-glr-single-img" src="../../_images/sphx_glr_04-primitives_004.png" />
-<p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[(11.041451884327385, 11.041451884327385, 15.541451884327387),
+<img src="../../_images/sphx_glr_04-primitives_004.png" srcset="../../_images/sphx_glr_04-primitives_004.png" alt="04 primitives" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+  warnings.warn(
+
+[(11.041451884327385, 11.041451884327385, 15.541451884327387),
  (0.0, 0.0, 4.500000000000001),
  (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
-</div>
-<div class="section" id="apdl-command-block">
+</section>
+<section id="apdl-command-block">
 <h2>APDL Command: BLOCK<a class="headerlink" href="#apdl-command-block" title="Permalink to this headline">¶</a></h2>
 <p>Create a block volume based on working plane coordinates with the
 size <code class="docutils literal notranslate"><span class="pre">(1</span> <span class="pre">x</span> <span class="pre">2</span> <span class="pre">x</span> <span class="pre">3)</span></code></p>
@@ -627,15 +644,19 @@ size <code class="docutils literal notranslate"><span class="pre">(1</span> <spa
 <span class="p">)</span>
 </pre></div>
 </div>
-<img alt="04 primitives" class="sphx-glr-single-img" src="../../_images/sphx_glr_04-primitives_005.png" />
-<p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[(4.673276542716538, 5.173276542716538, 6.673276542716538),
+<img src="../../_images/sphx_glr_04-primitives_005.png" srcset="../../_images/sphx_glr_04-primitives_005.png" alt="04 primitives" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+  warnings.warn(
+
+[(4.673276542716538, 5.173276542716538, 6.673276542716538),
  (0.5, 1.0, 2.5),
  (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
-</div>
-<div class="section" id="apdl-command-con4">
+</section>
+<section id="apdl-command-con4">
 <h2>APDL Command: CON4<a class="headerlink" href="#apdl-command-con4" title="Permalink to this headline">¶</a></h2>
 <p>Create a conical volume anywhere on the working plane.</p>
 <p>Create a cone with a bottom radius of 3 and a height of 10.</p>
@@ -646,15 +667,19 @@ size <code class="docutils literal notranslate"><span class="pre">(1</span> <spa
 <span class="n">mapdl</span><span class="o">.</span><span class="n">vplot</span><span class="p">(</span><span class="n">show_lines</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">quality</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">show_bounds</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="04 primitives" class="sphx-glr-single-img" src="../../_images/sphx_glr_04-primitives_006.png" />
-<p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[(14.627744630232042, 14.627744630232042, 19.627744630232044),
+<img src="../../_images/sphx_glr_04-primitives_006.png" srcset="../../_images/sphx_glr_04-primitives_006.png" alt="04 primitives" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+  warnings.warn(
+
+[(14.627744630232042, 14.627744630232042, 19.627744630232044),
  (0.0, 2.220446049250313e-16, 5.0),
  (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
-</div>
-<div class="section" id="apdl-command-cone">
+</section>
+<section id="apdl-command-cone">
 <h2>APDL Command: CONE<a class="headerlink" href="#apdl-command-cone" title="Permalink to this headline">¶</a></h2>
 <p>Create a conical volume centered about the working plane origin.</p>
 <p>Create a quarter cone with a bottom radius of 3, top radius of 1 and
@@ -666,15 +691,19 @@ a height of 10 centered at <code class="docutils literal notranslate"><span clas
 <span class="n">mapdl</span><span class="o">.</span><span class="n">vplot</span><span class="p">(</span><span class="n">show_lines</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">quality</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">show_bounds</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="04 primitives" class="sphx-glr-single-img" src="../../_images/sphx_glr_04-primitives_007.png" />
-<p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[(11.160254037844393, 16.160254037844393, 18.660254037844393),
+<img src="../../_images/sphx_glr_04-primitives_007.png" srcset="../../_images/sphx_glr_04-primitives_007.png" alt="04 primitives" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+  warnings.warn(
+
+[(11.160254037844393, 16.160254037844393, 18.660254037844393),
  (-2.5, 2.5, 5.000000000000001),
  (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
-</div>
-<div class="section" id="apdl-command-cyl4">
+</section>
+<section id="apdl-command-cyl4">
 <h2>APDL Command: CYL4<a class="headerlink" href="#apdl-command-cyl4" title="Permalink to this headline">¶</a></h2>
 <p>Creates a circular area or cylindrical volume anywhere on the working plane.</p>
 <p>Create a half arc centered at the origin with an outer radius
@@ -689,9 +718,13 @@ greater than 0 will generate a volume.</p>
 <span class="n">mapdl</span><span class="o">.</span><span class="n">aplot</span><span class="p">(</span><span class="n">show_lines</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">line_width</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">show_bounds</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cpos</span><span class="o">=</span><span class="s2">&quot;xy&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="04 primitives" class="sphx-glr-single-img" src="../../_images/sphx_glr_04-primitives_008.png" />
-<p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[(0.0, 0.9997959600081615, 8.639150703161897),
+<img src="../../_images/sphx_glr_04-primitives_008.png" srcset="../../_images/sphx_glr_04-primitives_008.png" alt="04 primitives" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+  warnings.warn(
+
+[(0.0, 0.9997959600081615, 8.639150703161897),
  (0.0, 0.9997959600081615, 0.0),
  (0.0, 1.0, 0.0)]
 </pre></div>
@@ -707,15 +740,19 @@ radius of 2 and an inner radius of 1, and a thickness of 0.55.</p>
 <span class="n">mapdl</span><span class="o">.</span><span class="n">vplot</span><span class="p">(</span><span class="n">show_bounds</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="04 primitives" class="sphx-glr-single-img" src="../../_images/sphx_glr_04-primitives_009.png" />
-<p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[(5.02546124453197, 6.025321252723083, 5.30046124453197),
+<img src="../../_images/sphx_glr_04-primitives_009.png" srcset="../../_images/sphx_glr_04-primitives_009.png" alt="04 primitives" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+  warnings.warn(
+
+[(5.02546124453197, 6.025321252723083, 5.30046124453197),
  (0.0, 0.9998600081911138, 0.2750000000000001),
  (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
-</div>
-<div class="section" id="apdl-command-cyl5">
+</section>
+<section id="apdl-command-cyl5">
 <h2>APDL Command: CYL5<a class="headerlink" href="#apdl-command-cyl5" title="Permalink to this headline">¶</a></h2>
 <p>Creates a circular area or cylindrical volume by end points.</p>
 <p>Create a circular with one point of the circle at <code class="docutils literal notranslate"><span class="pre">(1,</span> <span class="pre">1)</span></code> and the
@@ -727,9 +764,13 @@ other point at <code class="docutils literal notranslate"><span class="pre">(2,<
 <span class="n">mapdl</span><span class="o">.</span><span class="n">aplot</span><span class="p">(</span><span class="n">show_lines</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">line_width</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">show_bounds</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cpos</span><span class="o">=</span><span class="s2">&quot;xy&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="04 primitives" class="sphx-glr-single-img" src="../../_images/sphx_glr_04-primitives_010.png" />
-<p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[(1.5000000000015, 1.5000000000015, 3.8637033051669416),
+<img src="../../_images/sphx_glr_04-primitives_010.png" srcset="../../_images/sphx_glr_04-primitives_010.png" alt="04 primitives" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+  warnings.warn(
+
+[(1.5000000000015, 1.5000000000015, 3.8637033051669416),
  (1.5000000000015, 1.5000000000015, 0.0),
  (0.0, 1.0, 0.0)]
 </pre></div>
@@ -743,15 +784,19 @@ and the other point at <code class="docutils literal notranslate"><span class="p
 <span class="n">mapdl</span><span class="o">.</span><span class="n">vplot</span><span class="p">(</span><span class="n">show_lines</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">quality</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">show_bounds</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="04 primitives" class="sphx-glr-single-img" src="../../_images/sphx_glr_04-primitives_011.png" />
-<p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[(7.506370879310776, 7.506370879310776, 8.506370879310776),
+<img src="../../_images/sphx_glr_04-primitives_011.png" srcset="../../_images/sphx_glr_04-primitives_011.png" alt="04 primitives" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+  warnings.warn(
+
+[(7.506370879310776, 7.506370879310776, 8.506370879310776),
  (1.5, 1.5, 2.5000000000000004),
  (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
-</div>
-<div class="section" id="apdl-command-cylind">
+</section>
+<section id="apdl-command-cylind">
 <h2>APDL Command: CYLIND<a class="headerlink" href="#apdl-command-cylind" title="Permalink to this headline">¶</a></h2>
 <p>Create a cylindrical volume centered about the working plane origin.</p>
 <p>Create a hollow cylinder with an inner radius of 0.9 and an
@@ -763,15 +808,19 @@ outer radius of 1.0 with a height of 5</p>
 <span class="n">mapdl</span><span class="o">.</span><span class="n">vplot</span><span class="p">(</span><span class="n">show_lines</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">quality</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">show_bounds</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="04 primitives" class="sphx-glr-single-img" src="../../_images/sphx_glr_04-primitives_012.png" />
-<p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[(6.407227082229697, 6.407227082229697, 8.907227082229698),
+<img src="../../_images/sphx_glr_04-primitives_012.png" srcset="../../_images/sphx_glr_04-primitives_012.png" alt="04 primitives" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+  warnings.warn(
+
+[(6.407227082229697, 6.407227082229697, 8.907227082229698),
  (0.0, 0.0, 2.5000000000000004),
  (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
-</div>
-<div class="section" id="apdl-command-pcirc">
+</section>
+<section id="apdl-command-pcirc">
 <h2>APDL Command: PCIRC<a class="headerlink" href="#apdl-command-pcirc" title="Permalink to this headline">¶</a></h2>
 <p>Create a circular area centered about the working plane origin.</p>
 <p>In this example a circular area with an inner radius of 0.95 and an
@@ -783,15 +832,19 @@ outer radius of 1 is created.</p>
 <span class="n">mapdl</span><span class="o">.</span><span class="n">aplot</span><span class="p">(</span><span class="n">show_bounds</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="04 primitives" class="sphx-glr-single-img" src="../../_images/sphx_glr_04-primitives_013.png" />
-<p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[(3.1547005383792524, 3.1547005383792524, 3.1547005383792524),
+<img src="../../_images/sphx_glr_04-primitives_013.png" srcset="../../_images/sphx_glr_04-primitives_013.png" alt="04 primitives" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+  warnings.warn(
+
+[(3.1547005383792524, 3.1547005383792524, 3.1547005383792524),
  (0.0, 0.0, 0.0),
  (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
-</div>
-<div class="section" id="apdl-command-rectng">
+</section>
+<section id="apdl-command-rectng">
 <h2>APDL Command: RECTNG<a class="headerlink" href="#apdl-command-rectng" title="Permalink to this headline">¶</a></h2>
 <p>Create a rectangular area anywhere on the working plane.</p>
 <p>In this example a rectangle with one corner at <code class="docutils literal notranslate"><span class="pre">(0.5,</span> <span class="pre">0.5)</span></code> and
@@ -803,15 +856,19 @@ another at <code class="docutils literal notranslate"><span class="pre">(1.5,</s
 <span class="n">mapdl</span><span class="o">.</span><span class="n">aplot</span><span class="p">(</span><span class="n">show_bounds</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="04 primitives" class="sphx-glr-single-img" src="../../_images/sphx_glr_04-primitives_014.png" />
-<p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[(3.4940097592594674, 3.9940097592594674, 2.4940097592594674),
+<img src="../../_images/sphx_glr_04-primitives_014.png" srcset="../../_images/sphx_glr_04-primitives_014.png" alt="04 primitives" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+  warnings.warn(
+
+[(3.4940097592594674, 3.9940097592594674, 2.4940097592594674),
  (1.0, 1.5, 0.0),
  (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
-</div>
-<div class="section" id="apdl-command-sph4">
+</section>
+<section id="apdl-command-sph4">
 <h2>APDL Command: SPH4<a class="headerlink" href="#apdl-command-sph4" title="Permalink to this headline">¶</a></h2>
 <p>Create a spherical volume anywhere on the working plane.</p>
 <p>This example creates a hollow sphere with an inner radius of 0.9 and
@@ -823,15 +880,19 @@ an outer radius of 1.0 centered at <code class="docutils literal notranslate"><s
 <span class="n">mapdl</span><span class="o">.</span><span class="n">vplot</span><span class="p">(</span><span class="n">show_lines</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">show_bounds</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">smooth_shading</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="04 primitives" class="sphx-glr-single-img" src="../../_images/sphx_glr_04-primitives_015.png" />
-<p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[(3.856674145489138, 3.8577638544590824, 3.856674145489138),
+<img src="../../_images/sphx_glr_04-primitives_015.png" srcset="../../_images/sphx_glr_04-primitives_015.png" alt="04 primitives" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+  warnings.warn(
+
+[(3.856674145489138, 3.8577638544590824, 3.856674145489138),
  (0.0, 0.0010897089699446472, 0.0),
  (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
-</div>
-<div class="section" id="apdl-command-sphere">
+</section>
+<section id="apdl-command-sphere">
 <h2>APDL Command: SPHERE<a class="headerlink" href="#apdl-command-sphere" title="Permalink to this headline">¶</a></h2>
 <p>Create a spherical volume anywhere on the working plane.</p>
 <p>This example creates a half hollow sphere with an inner radius of 0.9 and
@@ -843,15 +904,19 @@ an outer radius of 1.0.</p>
 <span class="n">mapdl</span><span class="o">.</span><span class="n">vplot</span><span class="p">(</span><span class="n">show_lines</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">quality</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">show_bounds</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="04 primitives" class="sphx-glr-single-img" src="../../_images/sphx_glr_04-primitives_016.png" />
-<p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[(2.846065214951232, 3.346065214951232, 3.346065214951232),
+<img src="../../_images/sphx_glr_04-primitives_016.png" srcset="../../_images/sphx_glr_04-primitives_016.png" alt="04 primitives" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+  warnings.warn(
+
+[(2.846065214951232, 3.346065214951232, 3.346065214951232),
  (-0.5, 0.0, 0.0),
  (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
-</div>
-<div class="section" id="apdl-command-sph5">
+</section>
+<section id="apdl-command-sph5">
 <h2>APDL Command: SPH5<a class="headerlink" href="#apdl-command-sph5" title="Permalink to this headline">¶</a></h2>
 <p>Create a spherical volume anywhere on the working plane.</p>
 <p>This example creates a sphere with one point at <code class="docutils literal notranslate"><span class="pre">(1,</span> <span class="pre">1)</span></code> and one
@@ -863,15 +928,19 @@ point at <code class="docutils literal notranslate"><span class="pre">(2,</span>
 <span class="n">mapdl</span><span class="o">.</span><span class="n">vplot</span><span class="p">(</span><span class="n">show_lines</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">show_bounds</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">smooth_shading</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="04 primitives" class="sphx-glr-single-img" src="../../_images/sphx_glr_04-primitives_017.png" />
-<p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[(4.227405710402886, 4.225472042976391, 2.727405710402886),
+<img src="../../_images/sphx_glr_04-primitives_017.png" srcset="../../_images/sphx_glr_04-primitives_017.png" alt="04 primitives" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+  warnings.warn(
+
+[(4.227405710402886, 4.225472042976391, 2.727405710402886),
  (1.5, 1.4980663325735053, 0.0),
  (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
-</div>
-<div class="section" id="apdl-command-torus">
+</section>
+<section id="apdl-command-torus">
 <h2>APDL Command: TORUS<a class="headerlink" href="#apdl-command-torus" title="Permalink to this headline">¶</a></h2>
 <p>Create a toroidal volume.</p>
 <p>This example creates a torus with an inner minor radius of 1, an
@@ -884,14 +953,18 @@ and 180 define the starting and ending angles of the torus.</p>
 <span class="n">mapdl</span><span class="o">.</span><span class="n">vplot</span><span class="p">(</span><span class="n">show_lines</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">show_bounds</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">smooth_shading</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="04 primitives" class="sphx-glr-single-img" src="../../_images/sphx_glr_04-primitives_018.png" />
-<p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[(18.01409334294718, 21.5088971675611, 18.01409334294718),
+<img src="../../_images/sphx_glr_04-primitives_018.png" srcset="../../_images/sphx_glr_04-primitives_018.png" alt="04 primitives" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+  warnings.warn(
+
+[(18.01409334294718, 21.5088971675611, 18.01409334294718),
  (0.0, 3.494803824613917, 0.0),
  (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  12.905 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  17.816 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-examples-02-geometry-04-primitives-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../../_downloads/6aaeeb2dc18f0caf7d4cdcd52b64aa7b/04-primitives.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">04-primitives.py</span></code></a></p>
@@ -901,8 +974,8 @@ and 180 define the starting and ending angles of the torus.</p>
 </div>
 </div>
 <p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
-</div>
-</div>
+</section>
+</section>
 
 
               </div>
@@ -926,7 +999,7 @@ and 180 define the starting and ending angles of the torus.</p>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.2.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br>
 </p>
     </div>
     
