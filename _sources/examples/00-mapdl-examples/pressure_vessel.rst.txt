@@ -27,7 +27,7 @@ apply a pressure to it.
 
 Also shown here:
 - Various ways of accessing stress results from MAPDL.
-- Comparison between PRNSOL, *VGET (efficient wrapping), and the legacy reader.
+- Comparison between PRNSOL, VGET (efficient wrapping), and the legacy reader.
 - Notes regarding FULL vs. POWER graphics when using PRNSOL.
 
 .. GENERATED FROM PYTHON SOURCE LINES 15-28
@@ -163,9 +163,6 @@ Create the Geometry
     /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
       warnings.warn(
 
-    [(-26.027715969187703, 6.75, 1.7500000000000002),
-     (1.7500000000000002, 6.75, 1.7500000000000002),
-     (0.0, 1.0, 0.0)]
 
 
 
@@ -205,9 +202,6 @@ Create the mesh
     /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
       warnings.warn(
 
-    [(17.78747179228349, 22.78747179228349, 17.78747179228349),
-     (1.75, 6.75, 1.75),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -250,7 +244,7 @@ Solve
  .. code-block:: none
 
 
-    'FINISH SOLUTION PROCESSING\n\n\n ***** ROUTINE COMPLETED *****  CP =       113.486'
+    'FINISH SOLUTION PROCESSING\n\n\n ***** ROUTINE COMPLETED *****  CP =       113.940'
 
 
 
@@ -273,7 +267,7 @@ method to efficiently obtain results without outputting to disk.
     mapdl.set(1, 1)
 
     # results directly from MAPDL's VGET command
-    # *VGET, __VAR__, NODE, , S, EQV
+    # VGET, __VAR__, NODE, , S, EQV
     nnum = mapdl.mesh.nnum
     von_mises_mapdl = mapdl.post_processing.nodal_eqv_stress()
 
@@ -350,9 +344,6 @@ Plot the results
     /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
       warnings.warn(
 
-    [(-26.027715969187703, 6.75, 1.75),
-     (1.75, 6.75, 1.75),
-     (0.0, 1.0, 0.0)]
 
 
 
@@ -401,10 +392,10 @@ accessing the result file using the legacy file reader
 That these results are equivalent to results from PRNSOL.
 
 .. note::
-   Enabling POWER GRAPHICS with ``mapdl.graphics('POWER') will
+   Enabling POWER GRAPHICS with ``mapdl.graphics('POWER')`` will
    change the averaging scheme.
 
-.. GENERATED FROM PYTHON SOURCE LINES 148-161
+.. GENERATED FROM PYTHON SOURCE LINES 148-162
 
 .. code-block:: default
 
@@ -425,6 +416,7 @@ That these results are equivalent to results from PRNSOL.
 
 
 
+
 .. rst-class:: sphx-glr-script-out
 
  Out:
@@ -441,10 +433,26 @@ That these results are equivalent to results from PRNSOL.
 
 
 
+.. GENERATED FROM PYTHON SOURCE LINES 163-164
+
+stop mapdl
+
+.. GENERATED FROM PYTHON SOURCE LINES 164-165
+
+.. code-block:: default
+
+    mapdl.exit()
+
+
+
+
+
+
+
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  8.740 seconds)
+   **Total running time of the script:** ( 0 minutes  8.124 seconds)
 
 
 .. _sphx_glr_download_examples_00-mapdl-examples_pressure_vessel.py:

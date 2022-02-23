@@ -53,7 +53,7 @@ First, start MAPDL as a service.
  .. code-block:: none
 
 
-    <ansys.mapdl.core.mapdl_grpc.MapdlGrpc object at 0x7f93f91716a0>
+    <ansys.mapdl.core.mapdl_grpc.MapdlGrpc object at 0x7fb8591ccc40>
 
 
 
@@ -143,9 +143,6 @@ for a quadrilateral mesh.
     /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
       warnings.warn(
 
-    [(10.465228416603692, 10.465228416603692, 8.465228416603692),
-     (2.5, 2.5, 0.5),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -199,9 +196,6 @@ are self-evident.
     /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
       warnings.warn(
 
-    [(10.465228416603692, 10.465228416603692, 8.465228416603692),
-     (2.5, 2.5, 0.5),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -214,7 +208,7 @@ could set the keypoint element sizes to be an intermediate value, which would
 shift the main location of the size transition to within the face of ``a2``.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 100-108
+.. GENERATED FROM PYTHON SOURCE LINES 100-110
 
 .. code-block:: default
 
@@ -226,6 +220,8 @@ shift the main location of the size transition to within the face of ``a2``.
     _ = mapdl.eplot(
         vtk=True, show_edges=True, show_axes=False, line_width=2, background="w"
     )
+
+
 
 
 
@@ -249,10 +245,26 @@ shift the main location of the size transition to within the face of ``a2``.
 
 
 
+.. GENERATED FROM PYTHON SOURCE LINES 111-112
+
+stop mapdl
+
+.. GENERATED FROM PYTHON SOURCE LINES 112-113
+
+.. code-block:: default
+
+    mapdl.exit()
+
+
+
+
+
+
+
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.337 seconds)
+   **Total running time of the script:** ( 0 minutes  2.061 seconds)
 
 
 .. _sphx_glr_download_examples_03-tips-n-tricks_01-smoothing-element-size-transitions.py:

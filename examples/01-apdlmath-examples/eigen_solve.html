@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Using APDLMath to solve Eigenproblems &#8212; ansys.mapdl.core 0.60.6 documentation</title>
+    <title>Using APDLMath to solve Eigenproblems &#8212; PyMAPDL</title>
     
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
@@ -36,6 +36,8 @@
     
   <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
+    
+        <link href="../../_static/css/breadcrumbs.css" rel="stylesheet">
     
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -157,6 +159,29 @@
     </nav>
     
     
+        <div class="container-xl">
+    <div class="row">
+        <div class="col-12 col-md-3" id="breadcrumbs-spacer"></div>
+        <div class="col-12 col-md-11 col-xl-9" id="breadcrumbs">
+          
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+    
+        <li class="nav-item nav-item-additional-breadcrumb"><a href="https://docs.pyansys.com/">PyAnsys</a> » </li>
+    
+    
+        <li class="nav-item nav-item-0"><a href="../../index.html">PyMAPDL</a> » </li>
+    
+
+          <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">Examples</a> » </li>
+        <li class="nav-item nav-item-this"><a href="">Using APDLMath to solve Eigenproblems</a></li> 
+      </ul>
+    </div>
+        </div>
+  </div>
+</div>
+    
 
 
     <div class="container-xl">
@@ -174,6 +199,13 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../00-mapdl-examples/2d_plate_with_a_hole.html">
    MAPDL 2D Plane Stress Concentration Analysis
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../00-mapdl-examples/2d_pressure_vessel.html">
+   2D Pressure Vessel
   </a>
  </li>
 </ul>
@@ -368,6 +400,13 @@
 </ul>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
+  <a class="reference internal" href="../04-general-fea/00-how_finite_element_works.html">
+   Build a Finite Element
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
   <a class="reference internal" href="../06-verif-manual/vm-001-statically_indeterminate_reaction_force_analysis.html">
    Statically Indeterminate Reaction Force Analysis
   </a>
@@ -405,6 +444,34 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../06-verif-manual/vm-006-pinched_cylinder.html">
    Pinched Cylinder
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../06-verif-manual/vm-007-plastic_compression_of_a_pipe_assembly.html">
+   Plastic Compression of a Pipe Assembly
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../06-verif-manual/vm-008-parametric_calculation.html">
+   Parametric Calculation
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../06-verif-manual/vm-009-large_lateral_deflection_of_unequal_stiffness_springs.html">
+   Large Lateral Deflection of Unequal Stiffness Springs
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../06-verif-manual/vm-010-bending_of_a_t-shaped_beam.html">
+   Bending of a Tee-Shaped Beam
   </a>
  </li>
 </ul>
@@ -517,7 +584,7 @@ properties (e.g. scalar, storage, symmetry…)</p>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Calling MAPDL to solve the eigenproblem...
-Elapsed time to solve this problem: 0.04018998146057129
+Elapsed time to solve this problem: 0.03763175010681152
 </pre></div>
 </div>
 <p>This is the vector of eigenfrequencies.</p>
@@ -525,7 +592,7 @@ Elapsed time to solve this problem: 0.04018998146057129
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>AYJCVR :
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>XFASKI :
  Size : 10
   3.381e+02   3.381e+02   6.266e+02   6.266e+02   9.283e+02      &lt;       5
   9.283e+02   1.250e+03   1.250e+03   1.424e+03   1.424e+03      &lt;       10
@@ -578,7 +645,7 @@ factor and finally compute the normalized residual value
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>7.26842739712256e-11
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>2.3070247813015805e-11
 </pre></div>
 </div>
 <p>This residual can be computed for all eigenmodes</p>
@@ -622,16 +689,16 @@ factor and finally compute the normalized residual value
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[0] : Freq = 338.0666635506367   - Residual = 7.26842739712256e-11
-[1] : Freq = 338.0666635506368   - Residual = 6.387344133511492e-11
-[2] : Freq = 626.6450980927029   - Residual = 2.682669820053139e-11
-[3] : Freq = 626.6450980927033   - Residual = 1.9198781238770433e-11
-[4] : Freq = 928.2598500574524   - Residual = 1.850693034370454e-11
-[5] : Freq = 928.2598500574529   - Residual = 1.0119011726472506e-11
-[6] : Freq = 1249.8421074363514  - Residual = 2.1509320541484346e-11
-[7] : Freq = 1249.8421074363534  - Residual = 1.799925292309899e-11
-[8] : Freq = 1423.993890941669   - Residual = 1.1984320465052519e-09
-[9] : Freq = 1423.9938909416703  - Residual = 5.01371591775467e-10
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[0] : Freq = 338.0666635506365   - Residual = 2.3070247813015805e-11
+[1] : Freq = 338.0666635506367   - Residual = 7.911817709574835e-11
+[2] : Freq = 626.645098092703    - Residual = 1.4338816801861427e-11
+[3] : Freq = 626.6450980927036   - Residual = 3.0909179798841926e-11
+[4] : Freq = 928.2598500574526   - Residual = 1.5073029240215198e-11
+[5] : Freq = 928.2598500574527   - Residual = 1.3866957267529915e-11
+[6] : Freq = 1249.8421074363505  - Residual = 2.3330795208513303e-11
+[7] : Freq = 1249.842107436351   - Residual = 1.3173155997875071e-11
+[8] : Freq = 1423.9938909416678  - Residual = 3.8657651202757016e-10
+[9] : Freq = 1423.9938909416703  - Residual = 1.2400348326967832e-09
 </pre></div>
 </div>
 <p>Plot Accuracy of Eigenresults</p>
@@ -650,7 +717,11 @@ factor and finally compute the normalized residual value
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;BarContainer object of 10 artists&gt;
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  1.446 seconds)</p>
+<p>stop mapdl</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mapdl</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+</pre></div>
+</div>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  1.252 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-examples-01-apdlmath-examples-eigen-solve-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../../_downloads/ef9fd55df8801750a912151e4ce1ff42/eigen_solve.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">eigen_solve.py</span></code></a></p>

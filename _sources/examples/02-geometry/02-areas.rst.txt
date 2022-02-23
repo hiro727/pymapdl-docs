@@ -96,9 +96,6 @@ Create a simple triangle in the XY plane using three keypoints.
     /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
       warnings.warn(
 
-    [(0.5, 0.5, 2.7320508075688776),
-     (0.5, 0.5, 0.0),
-     (0.0, 1.0, 0.0)]
 
 
 
@@ -147,9 +144,6 @@ Create an area from four lines.
     /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
       warnings.warn(
 
-    [(0.5, 0.5, 2.7320508075688776),
-     (0.5, 0.5, 0.0),
-     (0.0, 1.0, 0.0)]
 
 
 
@@ -196,9 +190,6 @@ Drag a circle between two keypoints to create an area
     /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
       warnings.warn(
 
-    [(2.431851652578137, 2.431851652578137, 2.431851652578137),
-     (0.5, 0.5, 0.5),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -241,9 +232,6 @@ Subtract a ``0.5 x 0.5`` rectangle from a ``1 x 1`` rectangle.
     /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
       warnings.warn(
 
-    [(0.5, 0.5, 2.7320508075688776),
-     (0.5, 0.5, 0.0),
-     (0.0, 1.0, 0.0)]
 
 
 
@@ -310,7 +298,7 @@ individual meshes.
     /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
       warnings.warn(
 
-    [UnstructuredGrid (0x7f93f924b040)
+    [UnstructuredGrid (0x7fb85979b0a0)
       N Cells:	12
       N Points:	24
       X Bounds:	0.000e+00, 1.000e+00
@@ -535,12 +523,13 @@ camera direction from the following:
 - 'zx' - ZX Plane view
 - 'zy' - ZY Plane view
 
-.. GENERATED FROM PYTHON SOURCE LINES 184-186
+.. GENERATED FROM PYTHON SOURCE LINES 184-187
 
 .. code-block:: default
 
 
     mapdl.aplot(quality=1, show_bounds=True, cpos="iso", show_lines=True)
+
 
 
 
@@ -561,16 +550,29 @@ camera direction from the following:
     /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
       warnings.warn(
 
-    [(19.51889852282964, 18.33456188038427, 13.511123464700422),
-     (6.007775058129218, 4.82343841568385, 0.0),
-     (0.0, 0.0, 1.0)]
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 188-189
+
+stop mapdl
+
+.. GENERATED FROM PYTHON SOURCE LINES 189-190
+
+.. code-block:: default
+
+    mapdl.exit()
+
+
+
+
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.195 seconds)
+   **Total running time of the script:** ( 0 minutes  3.608 seconds)
 
 
 .. _sphx_glr_download_examples_02-geometry_02-areas.py:

@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Initial Setup and Launching MAPDL Locally &#8212; ansys.mapdl.core 0.60.6 documentation</title>
+    <title>Initial Setup and Launching MAPDL Locally &#8212; PyMAPDL</title>
     
     
   <link href="../_static/css/theme.css" rel="stylesheet">
@@ -36,6 +36,8 @@
     
   <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
+    
+        <link href="../_static/css/breadcrumbs.css" rel="stylesheet">
     
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -156,6 +158,29 @@
     </nav>
     
     
+        <div class="container-xl">
+    <div class="row">
+        <div class="col-12 col-md-3" id="breadcrumbs-spacer"></div>
+        <div class="col-12 col-md-11 col-xl-9" id="breadcrumbs">
+          
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+    
+        <li class="nav-item nav-item-additional-breadcrumb"><a href="https://docs.pyansys.com/">PyAnsys</a> » </li>
+    
+    
+        <li class="nav-item nav-item-0"><a href="../index.html">PyMAPDL</a> » </li>
+    
+
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">User Guide</a> » </li>
+        <li class="nav-item nav-item-this"><a href="">Initial Setup and Launching MAPDL Locally</a></li> 
+      </ul>
+    </div>
+        </div>
+  </div>
+</div>
+    
 
 
     <div class="container-xl">
@@ -184,33 +209,6 @@
   <a class="reference internal" href="mapdl_examples.html">
    ANSYS APDL Interactive Control Examples
   </a>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="extended_examples/index.html">
-   Extended Examples Library
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="extended_examples/Python_UPF/python_upf_examples.html">
-     Python UPF Examples
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="extended_examples/ex_01-gmsh_example/ex_01-gmsh_example.html">
-     Example 01: Gmsh Example
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="extended_examples/techdemo-1/ex_0-tecbrakesqueal.html">
-     Tech Demo: Brake Squeal Analysis
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="plotting.html">
@@ -256,6 +254,38 @@
   <a class="reference internal" href="upf.html">
    Using Python to Code UPF Subroutines
   </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="extended_examples/index.html">
+   Extended Examples
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="extended_examples/techdemo-1/ex_0-tecbrakesqueal.html">
+     Brake Squeal Analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://pyansys.github.io/ml-rl-cartpole/ml-rl-notebook.html">
+     Cart-Pole Simulation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="extended_examples/ex_01-gmsh_example/ex_01-gmsh_example.html">
+     Gmsh Example
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="extended_examples/Python_UPF/python_upf_examples.html">
+     UPF in PyMAPDL
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -320,10 +350,11 @@ the <a class="reference internal" href="../api/_autosummary/ansys.mapdl.core.lau
 <p>Python will automatically attempt to detect your MAPDL binary based on
 environmental variables.  If it is unable to find a copy of MAPDL, you
 will be prompted for the location of the MAPDL executable.  Here is a
-sample input for Linux and Windows:</p>
+sample input for Linux:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Enter</span> <span class="n">location</span> <span class="n">of</span> <span class="n">MAPDL</span> <span class="n">executable</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">ansys_inc</span><span class="o">/</span><span class="n">v212</span><span class="o">/</span><span class="n">ansys</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">ansys212</span>
 </pre></div>
 </div>
+<p>and for Windows:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Enter</span> <span class="n">location</span> <span class="n">of</span> <span class="n">MAPDL</span> <span class="n">executable</span><span class="p">:</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Program</span> <span class="n">Files</span>\<span class="n">ANSYS</span> <span class="n">Inc</span>\<span class="n">v212</span>\<span class="n">ANSYS</span>\<span class="nb">bin</span>\<span class="n">winx64</span>\<span class="n">ansys212</span><span class="o">.</span><span class="n">exe</span>
 </pre></div>
 </div>
@@ -335,7 +366,8 @@ the path again.  If you need to change the default ansys path
 <span class="n">pymapdl</span><span class="o">.</span><span class="n">change_default_ansys_path</span><span class="p">(</span><span class="n">new_path</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Also see <a class="reference internal" href="../api/_autosummary/ansys.mapdl.core.change_default_ansys_path.html#ansys.mapdl.core.change_default_ansys_path" title="ansys.mapdl.core.change_default_ansys_path"><code class="xref py py-func docutils literal notranslate"><span class="pre">change_default_ansys_path()</span></code></a> and <code class="xref py py-func docutils literal notranslate"><span class="pre">find_ansys()</span></code>.</p>
+<p>Also see <a class="reference internal" href="../api/_autosummary/ansys.mapdl.core.change_default_ansys_path.html#ansys.mapdl.core.change_default_ansys_path" title="ansys.mapdl.core.change_default_ansys_path"><code class="xref py py-func docutils literal notranslate"><span class="pre">change_default_ansys_path()</span></code></a> and
+<a class="reference internal" href="../api/_autosummary/ansys.mapdl.core.find_ansys.html#ansys.mapdl.core.find_ansys" title="ansys.mapdl.core.find_ansys"><code class="xref py py-func docutils literal notranslate"><span class="pre">find_ansys()</span></code></a>.</p>
 <p>Additionally, it is possible to specify the executable using the keyword argument <code class="docutils literal notranslate"><span class="pre">exec_file</span></code>.
 In Linux:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ansys.mapdl.core</span> <span class="kn">import</span> <span class="n">launch_mapdl</span>

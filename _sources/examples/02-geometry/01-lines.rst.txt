@@ -121,16 +121,6 @@ Create a circular arc that travels between ``(0, 0, 0)`` and
    :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(0.5, 0.5, 2.7320508075688776),
-     (0.5, 0.5, 0.0),
-     (0.0, 1.0, 0.0)]
 
 
 
@@ -165,16 +155,6 @@ Create two circles and join them with a line.  Plot the result.
    :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(3.203613541114848, 3.203613541114848, 3.453613541114848),
-     (0.0, 0.0, 0.25),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -210,16 +190,6 @@ Create two circular arcs and connect them with a spline.  Plot the result.
    :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-0.25, 1.25, 6.830127018922194),
-     (-0.25, 1.25, 0.0),
-     (0.0, 1.0, 0.0)]
 
 
 
@@ -254,16 +224,6 @@ keypoint at ``(1, 1, 1)`` at an angle of 60 degrees.  Plot the result.
    :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(0.5, 0.5, 2.7320508075688776),
-     (0.5, 0.5, 0.0),
-     (0.0, 1.0, 0.0)]
 
 
 
@@ -298,16 +258,6 @@ Generate a line on a square between its two corners.
    :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(0.50000000015, 0.50000000015, 2.7320508083884927),
-     (0.50000000015, 0.50000000015, 0.0),
-     (0.0, 1.0, 0.0)]
 
 
 
@@ -366,16 +316,6 @@ Create a single line and divide it into 5 pieces.
    :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(0.5, 0.0, 1.9318516525781368),
-     (0.5, 0.0, 0.0),
-     (0.0, 1.0, 0.0)]
 
 
 
@@ -408,16 +348,6 @@ Create a circular arc and extend it at one of its keypoints.
    :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(0.5, 0.0, 4.319751617610021),
-     (0.5, 0.0, 0.0),
-     (0.0, 1.0, 0.0)]
 
 
 
@@ -453,16 +383,6 @@ fillet between them.
    :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(0.5, 0.5, 2.7320508075688776),
-     (0.5, 0.5, 0.0),
-     (0.0, 1.0, 0.0)]
 
 
 
@@ -497,16 +417,6 @@ directed to a new keypoint.
    :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(0.0, 0.75, 4.8296291314453415),
-     (0.0, 0.75, 0.0),
-     (0.0, 1.0, 0.0)]
 
 
 
@@ -541,16 +451,6 @@ Generate a segmented spline through 5 keypoints.
    :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(0.4, 0.25208733064211125, 1.8267923549699552),
-     (0.4, 0.25208733064211125, 0.0),
-     (0.0, 1.0, 0.0)]
 
 
 
@@ -587,16 +487,6 @@ single line rather than multiple lines.
    :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(0.45194711247094027, 1.0, 4.405912813957279),
-     (0.45194711247094027, 1.0, 0.0),
-     (0.0, 1.0, 0.0)]
 
 
 
@@ -821,7 +711,7 @@ Plot colored lines while displaying the keypoint numbers.
 There are a variety of plotting options available for all the common
 plotting methods.
 
-.. GENERATED FROM PYTHON SOURCE LINES 299-310
+.. GENERATED FROM PYTHON SOURCE LINES 299-312
 
 .. code-block:: default
 
@@ -839,29 +729,37 @@ plotting methods.
 
 
 
+
+
 .. image-sg:: /examples/02-geometry/images/sphx_glr_01-lines_012.png
    :alt: 01 lines
    :srcset: /examples/02-geometry/images/sphx_glr_01-lines_012.png
    :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
 
 
-    [(0.4990704422816634, 0.47660788893699646, 3.1914768980744026),
-     (0.4990704422816634, 0.47660788893699646, 0.5679248422384262),
-     (0.0, 1.0, 0.0)]
+
+.. GENERATED FROM PYTHON SOURCE LINES 313-314
+
+stop mapdl
+
+.. GENERATED FROM PYTHON SOURCE LINES 314-315
+
+.. code-block:: default
+
+    mapdl.exit()
+
+
+
+
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  6.333 seconds)
+   **Total running time of the script:** ( 0 minutes  5.148 seconds)
 
 
 .. _sphx_glr_download_examples_02-geometry_01-lines.py:

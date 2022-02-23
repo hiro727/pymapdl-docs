@@ -71,7 +71,7 @@ First, allocate a APDLMath vector with 10 doubles
 
  .. code-block:: none
 
-    MUXCUM :
+    GGNGLG :
      Size : 10
       1.000e+00   1.000e+00   1.000e+00   1.000e+00   1.000e+00      <       5
       1.000e+00   1.000e+00   1.000e+00   1.000e+00   1.000e+00      <       10
@@ -167,7 +167,7 @@ numpy with the numpy methods.
 
 .. GENERATED FROM PYTHON SOURCE LINES 52-56
 
-Note that some methods have APDL correlaries, and these methods are
+Note that some methods have APDL corollaries, and these methods are
 more efficient if performed within MAPDL.
 
 For example, the norm method can be performed within MAPDL
@@ -224,7 +224,7 @@ creates a new APDLMath, which in this case is named ``'NewVec'``.
 
       Name                   Type            Mem. (MB)       Dims            Workspace
 
-       MUXCUM                VEC             0.000           10              1
+       GGNGLG                VEC             0.000           10              1
        NEWVEC                VEC             0.000           10              1
 
 
@@ -291,7 +291,7 @@ array
 
  .. code-block:: none
 
-    DEYMOO: 
+    BDAFNR: 
      [1,1]: 4.170e-01 [1,2]: 9.326e-01 [1,3]: 3.023e-01 
      [2,1]: 9.972e-01 [2,2]: 1.144e-04 [2,3]: 9.990e-01 
      [3,1]: 7.203e-01 [3,2]: 1.281e-01 [3,3]: 1.468e-01
@@ -327,7 +327,7 @@ You can load numpy array to APDL with the matrix method
 
  .. code-block:: none
 
-    XCLORB
+    QRRNDD
 
 
 
@@ -336,12 +336,14 @@ You can load numpy array to APDL with the matrix method
 
 Load this matrix from APDL and verify it is identical
 
-.. GENERATED FROM PYTHON SOURCE LINES 101-103
+.. GENERATED FROM PYTHON SOURCE LINES 101-105
 
 .. code-block:: default
 
     from_ans = ans_mat.asarray()
     print(np.allclose(from_ans, np_rand))
+
+
 
 
 
@@ -357,10 +359,26 @@ Load this matrix from APDL and verify it is identical
 
 
 
+.. GENERATED FROM PYTHON SOURCE LINES 106-107
+
+stop mapdl
+
+.. GENERATED FROM PYTHON SOURCE LINES 107-108
+
+.. code-block:: default
+
+    mapdl.exit()
+
+
+
+
+
+
+
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.218 seconds)
+   **Total running time of the script:** ( 0 minutes  0.204 seconds)
 
 
 .. _sphx_glr_download_examples_01-apdlmath-examples_use_numpy_arrays.py:

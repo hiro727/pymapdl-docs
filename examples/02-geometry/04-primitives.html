@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Primitives &#8212; ansys.mapdl.core 0.60.6 documentation</title>
+    <title>Primitives &#8212; PyMAPDL</title>
     
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
@@ -36,6 +36,8 @@
     
   <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
+    
+        <link href="../../_static/css/breadcrumbs.css" rel="stylesheet">
     
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -156,6 +158,29 @@
     </nav>
     
     
+        <div class="container-xl">
+    <div class="row">
+        <div class="col-12 col-md-3" id="breadcrumbs-spacer"></div>
+        <div class="col-12 col-md-11 col-xl-9" id="breadcrumbs">
+          
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+    
+        <li class="nav-item nav-item-additional-breadcrumb"><a href="https://docs.pyansys.com/">PyAnsys</a> » </li>
+    
+    
+        <li class="nav-item nav-item-0"><a href="../../index.html">PyMAPDL</a> » </li>
+    
+
+          <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">Examples</a> » </li>
+        <li class="nav-item nav-item-this"><a href="">Primitives</a></li> 
+      </ul>
+    </div>
+        </div>
+  </div>
+</div>
+    
 
 
     <div class="container-xl">
@@ -173,6 +198,13 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../00-mapdl-examples/2d_plate_with_a_hole.html">
    MAPDL 2D Plane Stress Concentration Analysis
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../00-mapdl-examples/2d_pressure_vessel.html">
+   2D Pressure Vessel
   </a>
  </li>
 </ul>
@@ -367,6 +399,13 @@
 </ul>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
+  <a class="reference internal" href="../04-general-fea/00-how_finite_element_works.html">
+   Build a Finite Element
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
   <a class="reference internal" href="../06-verif-manual/vm-001-statically_indeterminate_reaction_force_analysis.html">
    Statically Indeterminate Reaction Force Analysis
   </a>
@@ -404,6 +443,34 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../06-verif-manual/vm-006-pinched_cylinder.html">
    Pinched Cylinder
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../06-verif-manual/vm-007-plastic_compression_of_a_pipe_assembly.html">
+   Plastic Compression of a Pipe Assembly
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../06-verif-manual/vm-008-parametric_calculation.html">
+   Parametric Calculation
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../06-verif-manual/vm-009-large_lateral_deflection_of_unequal_stiffness_springs.html">
+   Large Lateral Deflection of Unequal Stiffness Springs
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../06-verif-manual/vm-010-bending_of_a_t-shaped_beam.html">
+   Bending of a Tee-Shaped Beam
   </a>
  </li>
 </ul>
@@ -558,10 +625,6 @@ ansys.mapdl Version: 0.60.6
   warnings.warn(
 /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
   warnings.warn(
-
-[(0.5, 0.5, 1.366025403784439),
- (0.5, 0.5, 0.0),
- (0.0, 1.0, 0.0)]
 </pre></div>
 </div>
 <p>Create a block with dimensions <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">x</span> <span class="pre">4</span> <span class="pre">x</span> <span class="pre">9</span></code> with one corner of
@@ -579,10 +642,6 @@ the block at <code class="docutils literal notranslate"><span class="pre">(0,</s
   warnings.warn(
 /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
   warnings.warn(
-
-[(11.541451884327385, 13.041451884327385, 15.541451884327387),
- (0.5, 2.0, 4.500000000000001),
- (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
 </section>
@@ -605,10 +664,6 @@ height of 0.5</p>
   warnings.warn(
 /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
   warnings.warn(
-
-[(0.0, 0.0, 1.3660254037844388),
- (0.0, 0.0, 0.0),
- (0.0, 1.0, 0.0)]
 </pre></div>
 </div>
 <p>Create a block with dimensions <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">x</span> <span class="pre">4</span> <span class="pre">x</span> <span class="pre">9</span></code> with the cetner at
@@ -626,10 +681,6 @@ height of 0.5</p>
   warnings.warn(
 /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
   warnings.warn(
-
-[(11.041451884327385, 11.041451884327385, 15.541451884327387),
- (0.0, 0.0, 4.500000000000001),
- (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
 </section>
@@ -654,10 +705,6 @@ size <code class="docutils literal notranslate"><span class="pre">(1</span> <spa
   warnings.warn(
 /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
   warnings.warn(
-
-[(4.673276542716538, 5.173276542716538, 6.673276542716538),
- (0.5, 1.0, 2.5),
- (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
 </section>
@@ -677,10 +724,6 @@ size <code class="docutils literal notranslate"><span class="pre">(1</span> <spa
   warnings.warn(
 /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
   warnings.warn(
-
-[(14.627744630232042, 14.627744630232042, 19.627744630232044),
- (0.0, 2.220446049250313e-16, 5.0),
- (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
 </section>
@@ -701,10 +744,6 @@ a height of 10 centered at <code class="docutils literal notranslate"><span clas
   warnings.warn(
 /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
   warnings.warn(
-
-[(11.160254037844393, 16.160254037844393, 18.660254037844393),
- (-2.5, 2.5, 5.000000000000001),
- (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
 </section>
@@ -728,10 +767,6 @@ greater than 0 will generate a volume.</p>
   warnings.warn(
 /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
   warnings.warn(
-
-[(0.0, 0.9997959600081615, 8.639150703161897),
- (0.0, 0.9997959600081615, 0.0),
- (0.0, 1.0, 0.0)]
 </pre></div>
 </div>
 <p>Create a volumetric half arc centered at the origin with an outer
@@ -750,10 +785,6 @@ radius of 2 and an inner radius of 1, and a thickness of 0.55.</p>
   warnings.warn(
 /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
   warnings.warn(
-
-[(5.02546124453197, 6.025321252723083, 5.30046124453197),
- (0.0, 0.9998600081911138, 0.2750000000000001),
- (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
 </section>
@@ -774,10 +805,6 @@ other point at <code class="docutils literal notranslate"><span class="pre">(2,<
   warnings.warn(
 /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
   warnings.warn(
-
-[(1.5000000000015, 1.5000000000015, 3.8637033051669416),
- (1.5000000000015, 1.5000000000015, 0.0),
- (0.0, 1.0, 0.0)]
 </pre></div>
 </div>
 <p>Create a cylinder with one point of the circle at <code class="docutils literal notranslate"><span class="pre">(X,</span> <span class="pre">Y)</span> <span class="pre">==</span> <span class="pre">(1,</span> <span class="pre">1)</span></code>
@@ -794,10 +821,6 @@ and the other point at <code class="docutils literal notranslate"><span class="p
   warnings.warn(
 /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
   warnings.warn(
-
-[(7.506370879310776, 7.506370879310776, 8.506370879310776),
- (1.5, 1.5, 2.5000000000000004),
- (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
 </section>
@@ -818,10 +841,6 @@ outer radius of 1.0 with a height of 5</p>
   warnings.warn(
 /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
   warnings.warn(
-
-[(6.407227082229697, 6.407227082229697, 8.907227082229698),
- (0.0, 0.0, 2.5000000000000004),
- (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
 </section>
@@ -842,10 +861,6 @@ outer radius of 1 is created.</p>
   warnings.warn(
 /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
   warnings.warn(
-
-[(3.1547005383792524, 3.1547005383792524, 3.1547005383792524),
- (0.0, 0.0, 0.0),
- (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
 </section>
@@ -866,10 +881,6 @@ another at <code class="docutils literal notranslate"><span class="pre">(1.5,</s
   warnings.warn(
 /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
   warnings.warn(
-
-[(3.4940097592594674, 3.9940097592594674, 2.4940097592594674),
- (1.0, 1.5, 0.0),
- (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
 </section>
@@ -890,10 +901,6 @@ an outer radius of 1.0 centered at <code class="docutils literal notranslate"><s
   warnings.warn(
 /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
   warnings.warn(
-
-[(3.856674145489138, 3.8577638544590824, 3.856674145489138),
- (0.0, 0.0010897089699446472, 0.0),
- (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
 </section>
@@ -914,10 +921,6 @@ an outer radius of 1.0.</p>
   warnings.warn(
 /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
   warnings.warn(
-
-[(2.846065214951232, 3.346065214951232, 3.346065214951232),
- (-0.5, 0.0, 0.0),
- (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
 </section>
@@ -938,10 +941,6 @@ point at <code class="docutils literal notranslate"><span class="pre">(2,</span>
   warnings.warn(
 /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
   warnings.warn(
-
-[(4.227405710402886, 4.225472042976391, 2.727405710402886),
- (1.5, 1.4980663325735053, 0.0),
- (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
 </section>
@@ -963,13 +962,13 @@ and 180 define the starting and ending angles of the torus.</p>
   warnings.warn(
 /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
   warnings.warn(
-
-[(18.01409334294718, 21.5088971675611, 18.01409334294718),
- (0.0, 3.494803824613917, 0.0),
- (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  24.282 seconds)</p>
+<p>stop mapdl</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mapdl</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+</pre></div>
+</div>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  20.409 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-examples-02-geometry-04-primitives-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../../_downloads/6aaeeb2dc18f0caf7d4cdcd52b64aa7b/04-primitives.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">04-primitives.py</span></code></a></p>
