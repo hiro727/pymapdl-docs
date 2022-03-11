@@ -32,24 +32,36 @@ This example shows:
   solutions using Python resources.
 - How MAPDL is really faster than SciPy :)
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-19
+.. GENERATED FROM PYTHON SOURCE LINES 16-19
+
+.. code-block:: default
+
+
+    import math
+
+
+
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 20-21
 
 First load python packages we need for this example
 
-.. GENERATED FROM PYTHON SOURCE LINES 19-30
+.. GENERATED FROM PYTHON SOURCE LINES 21-30
 
 .. code-block:: default
 
     import time
-    import math
 
     import matplotlib.pylab as plt
     import numpy as np
     import scipy
     from scipy.sparse.linalg import eigsh
 
-    from ansys.mapdl.core import launch_mapdl
-    from ansys.mapdl.core import examples
+    from ansys.mapdl.core import examples, launch_mapdl
 
 
 
@@ -86,7 +98,7 @@ Next:
 
     Product:             Ansys Mechanical Enterprise
     MAPDL Version:       21.2
-    ansys.mapdl Version: 0.60.7
+    ansys.mapdl Version: 0.61.0
 
 
 
@@ -269,8 +281,10 @@ Solve the eigenproblem using PyMapdl with APDLMath.
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/ansys/mapdl/core/math.py:1434: UserWarning: Call to sym() function cannot evaluate ifit is symmetric or not in this MAPDL version.
+      warn(
 
-    Elapsed time to solve this problem :  0.7211024761199951
+    Elapsed time to solve this problem :  0.6615898609161377
 
 
 
@@ -291,7 +305,7 @@ Accuracy : :math:`\frac{||(K-\lambda.M).\phi||_2}{||K.\phi||_2}`
     for i in range(nev):
         f = ev[i]  # Eigenfrequency (Hz)
         omega = 2 * np.pi * f  # omega = 2.pi.Frequency
-        lam = omega ** 2  # lambda = omega^2
+        lam = omega**2  # lambda = omega^2
 
         phi = A[i]  # i-th eigenshape
         kphi = k.dot(phi)  # K.Phi
@@ -451,7 +465,7 @@ Solve the eigenproblem
  .. code-block:: none
 
 
-    Elapsed time to solve this problem :  3.5720274448394775
+    Elapsed time to solve this problem :  3.2805163860321045
 
 
 
@@ -584,7 +598,7 @@ MAPDL is faster than SciPy.
 
  .. code-block:: none
 
-    Mapdl is 4.95 times faster
+    Mapdl is 4.96 times faster
 
 
 
@@ -608,7 +622,7 @@ stop mapdl
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  7.462 seconds)
+   **Total running time of the script:** ( 0 minutes  6.933 seconds)
 
 
 .. _sphx_glr_download_examples_01-apdlmath-examples_mapdl_vs_scipy.py:
