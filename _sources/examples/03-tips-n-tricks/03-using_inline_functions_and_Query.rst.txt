@@ -240,18 +240,18 @@ Using ``Query``
         ************************
         Displacement at Node 28:
         ************************
-        X | 1.757716378392643e-05
-        Y | 3.0362575468892575e-09
-        Z | -7.982690758480496e-07
+        X | 1.7577163783926435e-05
+        Y | 3.0362575468986493e-09
+        Z | -7.982690758480557e-07
 
     
 
         ************************
         Displacement at Node 49:
         ************************
-        X | 1.76124176751845e-05
-        Y | 1.1873707498206252e-19
-        Z | 8.070989838529127e-07
+        X | 1.7612417675184522e-05
+        Y | 1.232348657215774e-19
+        Z | 8.070989838529124e-07
 
     
 
@@ -277,7 +277,7 @@ stop mapdl
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.581 seconds)
+   **Total running time of the script:** ( 0 minutes  1.220 seconds)
 
 
 .. _sphx_glr_download_examples_03-tips-n-tricks_03-using_inline_functions_and_Query.py:
