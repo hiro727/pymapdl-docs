@@ -48,6 +48,7 @@
     <script src="../../_static/copybutton.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Contributing" href="../../contributing.html" />
@@ -591,11 +592,11 @@ the Mechanical APDL Technology Showcase Manual.</p>
 </section>
 <section id="starting-mapdl-as-a-service-and-importing-an-external-model">
 <h2>Starting MAPDL as a service and importing an external model<a class="headerlink" href="#starting-mapdl-as-a-service-and-importing-an-external-model" title="Permalink to this headline">¶</a></h2>
-<p>The original FE model is given in the Ansys Mechanical APDL Technology Showcase Manual.
-The .cdb contains a FE model of a single circuit board. The model is meshed
-with SOLID186, SHELL181 and BEAM188 elements. All components of the PCB
-model is assigned with linear elastic isotropic materials. Bonded and
-flexible surface-to-surface contact pairs are used to define the contact
+<p>The original FE model is given in the Ansys Mechanical APDL Technology
+Showcase Manual.  The .cdb contains a FE model of a single circuit board. The
+model is meshed with SOLID186, SHELL181 and BEAM188 elements. All components
+of the PCB model is assigned with linear elastic isotropic materials. Bonded
+and flexible surface-to-surface contact pairs are used to define the contact
 between the IC packages and the circuit board.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
@@ -621,12 +622,8 @@ between the IC packages and the circuit board.</p>
 <img src="../../_images/sphx_glr_20-example-technology-showcase-dynamic-simulation-PCB_001.png" srcset="../../_images/sphx_glr_20-example-technology-showcase-dynamic-simulation-PCB_001.png" alt="20 example technology showcase dynamic simulation PCB" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Product:             Ansys Mechanical Enterprise
 MAPDL Version:       21.2
-ansys.mapdl Version: 0.61.dev0
+ansys.mapdl Version: 0.61.4
 
-/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
-  warnings.warn(
-/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
-  warnings.warn(
 
 &#39;ALSO SELECT ALL COMPONENTS&#39;
 </pre></div>
@@ -694,14 +691,7 @@ that are binded together.</p>
 <span class="n">mapdl</span><span class="o">.</span><span class="n">eplot</span><span class="p">(</span><span class="n">vtk</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
-<img src="../../_images/sphx_glr_20-example-technology-showcase-dynamic-simulation-PCB_002.png" srcset="../../_images/sphx_glr_20-example-technology-showcase-dynamic-simulation-PCB_002.png" alt="20 example technology showcase dynamic simulation PCB" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
-  warnings.warn(
-/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
-  warnings.warn(
-</pre></div>
-</div>
-</section>
+<img src="../../_images/sphx_glr_20-example-technology-showcase-dynamic-simulation-PCB_002.png" srcset="../../_images/sphx_glr_20-example-technology-showcase-dynamic-simulation-PCB_002.png" alt="20 example technology showcase dynamic simulation PCB" class = "sphx-glr-single-img"/></section>
 <section id="run-modal-analysis">
 <h2>Run modal analysis<a class="headerlink" href="#run-modal-analysis" title="Permalink to this headline">¶</a></h2>
 <p>A modal analysis is run using Block Lanzos.
@@ -1885,14 +1875,7 @@ but will run locally if uncommented.</p>
 <span class="c1"># mesh.plot(total_def_container.get_field_by_time_id(1))</span>
 </pre></div>
 </div>
-<img src="../../_images/sphx_glr_20-example-technology-showcase-dynamic-simulation-PCB_003.png" srcset="../../_images/sphx_glr_20-example-technology-showcase-dynamic-simulation-PCB_003.png" alt="20 example technology showcase dynamic simulation PCB" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
-  warnings.warn(
-/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
-  warnings.warn(
-</pre></div>
-</div>
-</section>
+<img src="../../_images/sphx_glr_20-example-technology-showcase-dynamic-simulation-PCB_003.png" srcset="../../_images/sphx_glr_20-example-technology-showcase-dynamic-simulation-PCB_003.png" alt="20 example technology showcase dynamic simulation PCB" class = "sphx-glr-single-img"/></section>
 <section id="run-psd-analysis">
 <h2>Run PSD analysis<a class="headerlink" href="#run-psd-analysis" title="Permalink to this headline">¶</a></h2>
 <p>The response spectrum analysis is defined, solved and post-processed.</p>
@@ -2012,13 +1995,14 @@ but will run locally if uncommented.</p>
 <p>The response spectrum analysis is post-processed. First, the standard
 MAPDL POST1 postprocessor is used. Then, the MAPDL time-history
 POST26 postprocessor is used to generate the response power spectral
-density.
-density.
-.. note:: The graph generated through POST26 is exported as a picture</p>
-<blockquote>
-<div><p>in the working directory. Finally, the results from POST26 are saved to Python
-variables to be plotted in the Python environment with the use of Matplotlib library.</p>
-</div></blockquote>
+density.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The graph generated through POST26 is exported as a picture in the working
+directory. Finally, the results from POST26 are saved to Python variables
+to be plotted in the Python environment with the use of Matplotlib
+library.</p>
+</div>
 </section>
 <section id="post-process-psd-analysis-in-post1">
 <h2>Post-process PSD analysis in POST1<a class="headerlink" href="#post-process-psd-analysis-in-post1" title="Permalink to this headline">¶</a></h2>
@@ -2093,7 +2077,7 @@ variables to be plotted in the Python environment with the use of Matplotlib lib
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mapdl</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  47.175 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  41.760 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-examples-07-technology-showcase-examples-20-example-technology-showcase-dynamic-simulation-pcb-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../../_downloads/c4ede7a870ebd23031aa64003acee0cd/20-example-technology-showcase-dynamic-simulation-PCB.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">20-example-technology-showcase-dynamic-simulation-PCB.py</span></code></a></p>
