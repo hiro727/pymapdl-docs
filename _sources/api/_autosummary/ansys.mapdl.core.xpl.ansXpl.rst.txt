@@ -21,9 +21,6 @@
       ansXpl.copy
       
       
-      ansXpl.extract
-      
-      
       ansXpl.goto
       
       

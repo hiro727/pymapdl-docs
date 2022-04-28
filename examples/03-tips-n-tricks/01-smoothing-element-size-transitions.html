@@ -48,7 +48,6 @@
     <script src="../../_static/copybutton.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
-    <link rel="shortcut icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Using Inline Functions (Query)" href="03-using_inline_functions_and_Query.html" />
@@ -565,7 +564,7 @@ reduce this effect using a simple geometry.</p>
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;ansys.mapdl.core.mapdl_grpc.MapdlGrpc object at 0x7faba7df3310&gt;
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;ansys.mapdl.core.mapdl_grpc.MapdlGrpc object at 0x7ff04d4cc490&gt;
 </pre></div>
 </div>
 <section id="the-geometry-a-box">
@@ -610,7 +609,14 @@ for a quadrilateral mesh.</p>
 <span class="n">mapdl</span><span class="o">.</span><span class="n">eplot</span><span class="p">(</span><span class="n">show_edges</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_axes</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">line_width</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">background</span><span class="o">=</span><span class="s2">&quot;w&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<img src="../../_images/sphx_glr_01-smoothing-element-size-transitions_001.png" srcset="../../_images/sphx_glr_01-smoothing-element-size-transitions_001.png" alt="01 smoothing element size transitions" class = "sphx-glr-single-img"/></section>
+<img src="../../_images/sphx_glr_01-smoothing-element-size-transitions_001.png" srcset="../../_images/sphx_glr_01-smoothing-element-size-transitions_001.png" alt="01 smoothing element size transitions" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+  warnings.warn(
+</pre></div>
+</div>
+</section>
 <section id="smoothing-the-transition">
 <h2>Smoothing the transition<a class="headerlink" href="#smoothing-the-transition" title="Permalink to this headline">¶</a></h2>
 <p>The mesh mostly looks fine, but we have quite a sharp transition in element
@@ -631,7 +637,14 @@ are self-evident.</p>
 <span class="n">mapdl</span><span class="o">.</span><span class="n">eplot</span><span class="p">(</span><span class="n">show_edges</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_axes</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">line_width</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">background</span><span class="o">=</span><span class="s2">&quot;w&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<img src="../../_images/sphx_glr_01-smoothing-element-size-transitions_002.png" srcset="../../_images/sphx_glr_01-smoothing-element-size-transitions_002.png" alt="01 smoothing element size transitions" class = "sphx-glr-single-img"/></section>
+<img src="../../_images/sphx_glr_01-smoothing-element-size-transitions_002.png" srcset="../../_images/sphx_glr_01-smoothing-element-size-transitions_002.png" alt="01 smoothing element size transitions" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+  warnings.warn(
+</pre></div>
+</div>
+</section>
 <section id="smoothing-the-transition-into-a2">
 <h2>Smoothing the transition into a2<a class="headerlink" href="#smoothing-the-transition-into-a2" title="Permalink to this headline">¶</a></h2>
 <p>Similarly, if we were happy to reduce the mesh size at the edges of <code class="docutils literal notranslate"><span class="pre">a2</span></code>, we
@@ -646,11 +659,18 @@ shift the main location of the size transition to within the face of <code class
 <span class="p">)</span>
 </pre></div>
 </div>
-<img src="../../_images/sphx_glr_01-smoothing-element-size-transitions_003.png" srcset="../../_images/sphx_glr_01-smoothing-element-size-transitions_003.png" alt="01 smoothing element size transitions" class = "sphx-glr-single-img"/><p>stop mapdl</p>
+<img src="../../_images/sphx_glr_01-smoothing-element-size-transitions_003.png" srcset="../../_images/sphx_glr_01-smoothing-element-size-transitions_003.png" alt="01 smoothing element size transitions" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1401: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1541: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+  warnings.warn(
+</pre></div>
+</div>
+<p>stop mapdl</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mapdl</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  1.697 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  1.754 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-examples-03-tips-n-tricks-01-smoothing-element-size-transitions-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../../_downloads/dd0223228197eba5e605b5ba29212e97/01-smoothing-element-size-transitions.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">01-smoothing-element-size-transitions.py</span></code></a></p>

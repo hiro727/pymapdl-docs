@@ -48,7 +48,6 @@
     <script src="../../_static/copybutton.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
-    <link rel="shortcut icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="mesh" href="ansys.mapdl.core.Mapdl.mesh.html" />
@@ -200,11 +199,6 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../commands.html">
    Commands Output
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../database.html">
-   Database
   </a>
  </li>
  <li class="toctree-l1">
@@ -467,7 +461,7 @@
 <dt class="sig sig-object py" id="ansys.mapdl.core.Mapdl.load_table">
 <span class="sig-prename descclassname"><span class="pre">Mapdl.</span></span><span class="sig-name descname"><span class="pre">load_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">array</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">csysid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.core.Mapdl.load_table" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load a table from Python to MAPDL.</p>
-<p>Uses <code class="docutils literal notranslate"><span class="pre">TREAD</span></code> to transfer the table.
+<p>Uses TREAD to transfer the table.
 It should be noticed that PyMAPDL when query a table, it will return
 the table but not its axis (meaning it will return <code class="docutils literal notranslate"><span class="pre">table[1:,1:]</span></code>).</p>
 <dl class="field-list">

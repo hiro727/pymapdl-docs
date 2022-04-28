@@ -48,7 +48,6 @@
     <script src="../../_static/copybutton.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
-    <link rel="shortcut icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="mass" href="ansys.mapdl.core.math.MapdlMath.mass.html" />
@@ -201,11 +200,6 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../commands.html">
    Commands Output
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../database.html">
-   Database
   </a>
  </li>
  <li class="toctree-l1">
@@ -489,6 +483,10 @@ numpy data type. Defaults to <code class="docutils literal notranslate"><span cl
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;STIFF&quot;</span></code> - Stiffness matrix</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;MASS&quot;</span></code> - Mass matrix</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;DAMP&quot;</span></code> - Damping matrix</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;NOD2BCS&quot;</span></code> - Mapping vector relating the full set of
+nodal DOFs to the subset that the solver uses</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;USR2BCS&quot;</span></code> - Mapping vector relating the full set of
+external nodal DOFs to the subset that the solver uses</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;GMAT&quot;</span></code> - Constraint equation matrix</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;K_RE&quot;</span></code> - Real part of the stiffness matrix</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;K_IM&quot;</span></code> - Imaginary part of the stiffness matrix</p></li>
