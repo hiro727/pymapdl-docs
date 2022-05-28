@@ -9,8 +9,9 @@
     <title>Helper Functions &#8212; PyMAPDL</title>
     
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -20,21 +21,18 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/blank.css" />
     <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
     <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/pyansys_sphinx_theme.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-rendered-html.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     
         <link href="../_static/css/breadcrumbs.css" rel="stylesheet">
@@ -51,7 +49,7 @@
     <link rel="shortcut icon" href="../_static/favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="convert_script" href="_autosummary/ansys.mapdl.core.convert_script.html" />
+    <link rel="next" title="launch_mapdl" href="_autosummary/ansys.mapdl.core.launch_mapdl.html" />
     <link rel="prev" title="vnum" href="_autosummary/ansys.mapdl.core.mapdl_geometry.Geometry.vnum.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -60,7 +58,7 @@
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
     
     <div class="container-fluid" id="banner"></div>
 
@@ -140,20 +138,20 @@
       
     </div>
 
+    
     <div id="navbar-end">
       
       <div class="navbar-end-item">
         <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/pyansys/pymapdl" rel="noopener" target="_blank" title="GitHub">
-            <span><i class="fab fa-github-square"></i></span>
-            <label class="sr-only">GitHub</label>
-          </a>
+          <a class="nav-link" href="https://github.com/pyansys/pymapdl" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
         </li>
       </ul>
       </div>
       
     </div>
+    
   </div>
 </div>
     </nav>
@@ -189,7 +187,8 @@
           
             
             <!-- Only show if we have sidebars configured, else just a small margin  -->
-            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
@@ -222,13 +221,18 @@
   </label>
   <ul>
    <li class="toctree-l2">
+    <a class="reference internal" href="_autosummary/ansys.mapdl.core.launch_mapdl.html">
+     launch_mapdl
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="_autosummary/ansys.mapdl.core.convert_script.html">
      convert_script
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="_autosummary/ansys.mapdl.core.launch_mapdl.html">
-     launch_mapdl
+    <a class="reference internal" href="_autosummary/ansys.mapdl.core.Information.html">
+     ansys.mapdl.core.Information
     </a>
    </li>
    <li class="toctree-l2">
@@ -308,6 +312,9 @@
     
   </div>
 </nav>
+              </div>
+              <div class="sidebar-end-items">
+              </div>
             </div>
             
           
@@ -341,28 +348,31 @@
               <div>
                 
   <section id="helper-functions">
-<span id="launcher-api"></span><h1>Helper Functions<a class="headerlink" href="#helper-functions" title="Permalink to this headline">¶</a></h1>
+<span id="launcher-api"></span><h1>Helper Functions<a class="headerlink" href="#helper-functions" title="Permalink to this headline">#</a></h1>
 <p>These methods simplify launching MAPDL, converting existing scripts,
 or automating other tasks.</p>
-<table class="longtable table autosummary">
+<table class="autosummary longtable table autosummary">
 <colgroup>
 <col style="width: 10%" />
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.convert_script.html#ansys.mapdl.core.convert_script" title="ansys.mapdl.core.convert_script"><code class="xref py py-obj docutils literal notranslate"><span class="pre">convert_script</span></code></a>(filename_in, filename_out[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.launch_mapdl.html#ansys.mapdl.core.launch_mapdl" title="ansys.mapdl.core.launch_mapdl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">launch_mapdl</span></code></a>([exec_file, run_location, ...])</p></td>
+<td><p>Start MAPDL locally.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.convert_script.html#ansys.mapdl.core.convert_script" title="ansys.mapdl.core.convert_script"><code class="xref py py-obj docutils literal notranslate"><span class="pre">convert_script</span></code></a>(filename_in, filename_out[, ...])</p></td>
 <td><p>Converts an ANSYS input file to a python PyMAPDL script.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.launch_mapdl.html#ansys.mapdl.core.launch_mapdl" title="ansys.mapdl.core.launch_mapdl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">launch_mapdl</span></code></a>([exec_file, run_location, ...])</p></td>
-<td><p>Start MAPDL locally in gRPC mode.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.Information.html#ansys.mapdl.core.Information" title="ansys.mapdl.core.Information"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Information</span></code></a>(mapdl)</p></td>
+<td><p>This class provide some MAPDL information from <code class="docutils literal notranslate"><span class="pre">/STATUS</span></code> MAPDL command.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.change_default_ansys_path.html#ansys.mapdl.core.change_default_ansys_path" title="ansys.mapdl.core.change_default_ansys_path"><code class="xref py py-obj docutils literal notranslate"><span class="pre">change_default_ansys_path</span></code></a>(exe_loc)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.change_default_ansys_path.html#ansys.mapdl.core.change_default_ansys_path" title="ansys.mapdl.core.change_default_ansys_path"><code class="xref py py-obj docutils literal notranslate"><span class="pre">change_default_ansys_path</span></code></a>(exe_loc)</p></td>
 <td><p>Change your default ansys path.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.find_ansys.html#ansys.mapdl.core.find_ansys" title="ansys.mapdl.core.find_ansys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">find_ansys</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.find_ansys.html#ansys.mapdl.core.find_ansys" title="ansys.mapdl.core.find_ansys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">find_ansys</span></code></a>()</p></td>
 <td><p>Searches for ansys path within the standard install location and returns the path of the latest version.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.close_all_local_instances.html#ansys.mapdl.core.close_all_local_instances" title="ansys.mapdl.core.close_all_local_instances"><code class="xref py py-obj docutils literal notranslate"><span class="pre">close_all_local_instances</span></code></a>([port_range])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.close_all_local_instances.html#ansys.mapdl.core.close_all_local_instances" title="ansys.mapdl.core.close_all_local_instances"><code class="xref py py-obj docutils literal notranslate"><span class="pre">close_all_local_instances</span></code></a>([port_range])</p></td>
 <td><p>Close all MAPDL instances within a port_range.</p></td>
 </tr>
 </tbody>
@@ -379,7 +389,8 @@ or automating other tasks.</p>
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
 <footer class="footer mt-5 mt-md-0">
   <div class="container">
     
@@ -391,7 +402,7 @@ or automating other tasks.</p>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
 </p>
     </div>
     

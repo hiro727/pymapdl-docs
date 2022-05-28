@@ -9,8 +9,9 @@
     <title>User Guide &#8212; PyMAPDL</title>
     
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -20,21 +21,18 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/blank.css" />
     <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
     <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/pyansys_sphinx_theme.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-rendered-html.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     
         <link href="../_static/css/breadcrumbs.css" rel="stylesheet">
@@ -60,7 +58,7 @@
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
     
     <div class="container-fluid" id="banner"></div>
 
@@ -140,20 +138,20 @@
       
     </div>
 
+    
     <div id="navbar-end">
       
       <div class="navbar-end-item">
         <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/pyansys/pymapdl" rel="noopener" target="_blank" title="GitHub">
-            <span><i class="fab fa-github-square"></i></span>
-            <label class="sr-only">GitHub</label>
-          </a>
+          <a class="nav-link" href="https://github.com/pyansys/pymapdl" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
         </li>
       </ul>
       </div>
       
     </div>
+    
   </div>
 </div>
     </nav>
@@ -188,7 +186,8 @@
           
             
             <!-- Only show if we have sidebars configured, else just a small margin  -->
-            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
@@ -255,43 +254,14 @@
    Using Python to Code UPF Subroutines
   </a>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="extended_examples/index.html">
-   Extended Examples
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="extended_examples/techdemo-1/ex_0-tecbrakesqueal.html">
-     Brake Squeal Analysis
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference external" href="https://pyansys.github.io/ml-rl-cartpole/ml-rl-notebook.html">
-     Cart-Pole Simulation
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="extended_examples/ex_01-gmsh_example/ex_01-gmsh_example.html">
-     Gmsh Example
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="extended_examples/Python_UPF/python_upf_examples.html">
-     UPF in PyMAPDL
-    </a>
-   </li>
-  </ul>
- </li>
 </ul>
 
     
   </div>
 </nav>
+              </div>
+              <div class="sidebar-end-items">
+              </div>
             </div>
             
           
@@ -302,7 +272,7 @@
               
               <div class="toc-item">
                 
-<div class="tocsection onthispage pt-5 pb-3">
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
     <i class="fas fa-list"></i> On this page
 </div>
 
@@ -313,11 +283,6 @@
    PyMAPDL Basic Overview
   </a>
   <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#interactive-command-output">
-     Interactive Command output
-    </a>
-   </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#calling-mapdl-pythonically">
      Calling MAPDL Pythonically
@@ -354,13 +319,13 @@
               <div>
                 
   <section id="user-guide">
-<span id="ref-user-guide"></span><h1>User Guide<a class="headerlink" href="#user-guide" title="Permalink to this headline">¶</a></h1>
+<span id="ref-user-guide"></span><h1>User Guide<a class="headerlink" href="#user-guide" title="Permalink to this headline">#</a></h1>
 <p>This guide provides a general overview of the basics and usage of the
 PyMAPDL library.</p>
 <div class="toctree-wrapper compound">
 </div>
 <section id="pymapdl-basic-overview">
-<h2>PyMAPDL Basic Overview<a class="headerlink" href="#pymapdl-basic-overview" title="Permalink to this headline">¶</a></h2>
+<h2>PyMAPDL Basic Overview<a class="headerlink" href="#pymapdl-basic-overview" title="Permalink to this headline">#</a></h2>
 <p>The <a class="reference internal" href="../api/_autosummary/ansys.mapdl.core.launch_mapdl.html#ansys.mapdl.core.launch_mapdl" title="ansys.mapdl.core.launch_mapdl"><code class="xref py py-func docutils literal notranslate"><span class="pre">launch_mapdl()</span></code></a> function
 within the <code class="docutils literal notranslate"><span class="pre">ansys-mapdl-core</span></code> library creates an instance of of
 <a class="reference internal" href="../api/mapdl.html#ansys.mapdl.core.mapdl._MapdlCore" title="ansys.mapdl.core.mapdl._MapdlCore"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mapdl</span></code></a> in the background and sends
@@ -418,24 +383,10 @@ you had instead outputted it to a script file.</p>
 <p>The <a class="reference internal" href="../api/mapdl.html#ansys.mapdl.core.mapdl._MapdlCore" title="ansys.mapdl.core.mapdl._MapdlCore"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mapdl</span></code></a> class supports much more
 than just sending text to MAPDL and includes higher level wrapping
 allowing for better scripting and interaction with MAPDL.  See the
-<a class="reference internal" href="../examples/index.html#ref-example-gallery"><span class="std std-ref">Examples</span></a> for an overview of the various advanced
+<a class="reference internal" href="../examples/index.html#ref-examples"><span class="std std-ref">Examples</span></a> for an overview of the various advanced
 methods to visualize, script, and interact with MAPDL.</p>
-<section id="interactive-command-output">
-<h3>Interactive Command output<a class="headerlink" href="#interactive-command-output" title="Permalink to this headline">¶</a></h3>
-<p>The command output has stored the command and arguments that created it.
-You can inspect this command using:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">output</span> <span class="o">=</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">prep7</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="o">.</span><span class="n">command</span><span class="p">())</span>
-<span class="go">prep7</span>
-</pre></div>
-</div>
-<p>or if you want to see only the command you can:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="o">.</span><span class="n">cmd</span><span class="p">())</span>
-</pre></div>
-</div>
-</section>
 <section id="calling-mapdl-pythonically">
-<h3>Calling MAPDL Pythonically<a class="headerlink" href="#calling-mapdl-pythonically" title="Permalink to this headline">¶</a></h3>
+<h3>Calling MAPDL Pythonically<a class="headerlink" href="#calling-mapdl-pythonically" title="Permalink to this headline">#</a></h3>
 <p>MAPDL functions can be called directly from an instance of
 <a class="reference internal" href="../api/mapdl.html#ansys.mapdl.core.mapdl._MapdlCore" title="ansys.mapdl.core.mapdl._MapdlCore"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mapdl</span></code></a> in a pythonic manner.  This is
 to simplify calling ANSYS, especially when inputs are variables within
@@ -541,7 +492,7 @@ within it.  For example:</p>
 </pre></div>
 </div>
 <section id="remote-stability-considerations">
-<h4>Remote Stability Considerations<a class="headerlink" href="#remote-stability-considerations" title="Permalink to this headline">¶</a></h4>
+<h4>Remote Stability Considerations<a class="headerlink" href="#remote-stability-considerations" title="Permalink to this headline">#</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This is only valid for instances of MAPDL launched in 2021R1 or
@@ -581,7 +532,8 @@ in via <a class="reference internal" href="../mapdl_commands/prep7/_autosummary/
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
 <footer class="footer mt-5 mt-md-0">
   <div class="container">
     
@@ -593,7 +545,7 @@ in via <a class="reference internal" href="../mapdl_commands/prep7/_autosummary/
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
 </p>
     </div>
     
