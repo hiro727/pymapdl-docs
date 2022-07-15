@@ -763,7 +763,7 @@ to check
 
      *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2021 R2          21.2BETA ***
      Ansys Mechanical Enterprise                       
-     00000000  VERSION=LINUX x64     17:08:37  JUL 15, 2022 CP=    104.204
+     00000000  VERSION=LINUX x64     21:25:24  JUL 15, 2022 CP=     99.430
 
      Lathe Cutter                                                                  
 
@@ -1160,7 +1160,7 @@ Finally, exit MAPDL.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.874 seconds)
+   **Total running time of the script:** ( 0 minutes  9.072 seconds)
 
 
 .. _sphx_glr_download_examples_gallery_examples_00-mapdl-examples_lathe_cutter.py:
