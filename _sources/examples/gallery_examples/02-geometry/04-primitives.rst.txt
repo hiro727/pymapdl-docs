@@ -50,8 +50,8 @@ using Pythonic PREP7 volume commands.
  .. code-block:: none
 
     Product:             Ansys Mechanical Enterprise
-    MAPDL Version:       21.2
-    ansys.mapdl Version: 0.62.2
+    MAPDL Version:       22.2
+    ansys.mapdl Version: 0.63.0
 
 
 
@@ -650,7 +650,7 @@ stop mapdl
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  19.890 seconds)
+   **Total running time of the script:** ( 0 minutes  12.916 seconds)
 
 
 .. _sphx_glr_download_examples_gallery_examples_02-geometry_04-primitives.py:

@@ -108,10 +108,10 @@ Start MAPDL
  .. code-block:: none
 
 
-    *****ANSYS VERIFICATION RUN ONLY*****
+    *****MAPDL VERIFICATION RUN ONLY*****
          DO NOT USE RESULTS FOR PRODUCTION
 
-              ***** ANSYS ANALYSIS DEFINITION (PREP7) *****
+              ***** MAPDL ANALYSIS DEFINITION (PREP7) *****
 
 
 
@@ -429,7 +429,7 @@ Enter solution mode and solve the system. Print the solver output.
 
  .. code-block:: none
 
-    *****  ANSYS SOLVE    COMMAND  *****
+    *****  MAPDL SOLVE    COMMAND  *****
 
      *** NOTE ***                            CP =       0.000   TIME= 00:00:00
      There is no title defined for this analysis.                            
@@ -443,7 +443,7 @@ Enter solution mode and solve the system. Print the solver output.
      ELEMENT TYPE         1 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED.
 
 
-       *****ANSYS VERIFICATION RUN ONLY*****
+       *****MAPDL VERIFICATION RUN ONLY*****
          DO NOT USE RESULTS FOR PRODUCTION
 
                            S O L U T I O N   O P T I O N S
@@ -621,7 +621,7 @@ stop mapdl
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.611 seconds)
+   **Total running time of the script:** ( 0 minutes  0.628 seconds)
 
 
 .. _sphx_glr_download_examples_gallery_examples_06-verif-manual_vm-002-beam_stresses_and_deflections.py:

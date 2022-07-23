@@ -761,16 +761,13 @@ to check
 
     PRINT S    NODAL SOLUTION PER NODE
 
-     *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2021 R2          21.2BETA ***
+     *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE                  22.2     ***
      Ansys Mechanical Enterprise                       
-     00000000  VERSION=LINUX x64     21:25:24  JUL 15, 2022 CP=     99.430
+     00000000  VERSION=LINUX x64     01:12:40  JUL 23, 2022 CP=    112.293
 
      Lathe Cutter                                                                  
 
 
-
-     ** WARNING: PRE-RELEASE VERSION OF ANSYS 21.2BETA
-      ANSYS,INC TESTING IS NOT COMPLETE - CHECK RESULTS CAREFULLY **
  
       ***** POST1 NODAL STRESS LISTING *****                                       
  
@@ -1160,7 +1157,7 @@ Finally, exit MAPDL.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.072 seconds)
+   **Total running time of the script:** ( 0 minutes  8.285 seconds)
 
 
 .. _sphx_glr_download_examples_gallery_examples_00-mapdl-examples_lathe_cutter.py:

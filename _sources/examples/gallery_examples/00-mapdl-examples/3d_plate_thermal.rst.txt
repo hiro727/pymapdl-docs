@@ -129,21 +129,18 @@ Solve the thermal static analysis and print the results
 
  .. code-block:: none
 
-    *****  ANSYS SOLVE    COMMAND  *****
+    *****  MAPDL SOLVE    COMMAND  *****
 
-     *** NOTE ***                            CP =      74.100   TIME= 21:24:52
+     *** NOTE ***                            CP =      40.204   TIME= 01:11:14
      There is no title defined for this analysis.                            
 
-     *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2021 R2          21.2BETA ***
+     *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE                  22.2     ***
      Ansys Mechanical Enterprise                       
-     00000000  VERSION=LINUX x64     21:24:52  JUL 15, 2022 CP=     74.103
+     00000000  VERSION=LINUX x64     01:11:14  JUL 23, 2022 CP=     40.207
 
                                                                                
 
 
-
-     ** WARNING: PRE-RELEASE VERSION OF ANSYS 21.2BETA
-      ANSYS,INC TESTING IS NOT COMPLETE - CHECK RESULTS CAREFULLY **
 
                            S O L U T I O N   O P T I O N S
 
@@ -152,11 +149,11 @@ Solve the thermal static analysis and print the results
        ANALYSIS TYPE . . . . . . . . . . . . . . . . .STATIC (STEADY-STATE)
        GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  
 
-     *** NOTE ***                            CP =      74.104   TIME= 21:24:52
+     *** NOTE ***                            CP =      40.207   TIME= 01:11:14
      Present time 0 is less than or equal to the previous time.  Time will   
      default to 1.                                                           
 
-     *** NOTE ***                            CP =      74.104   TIME= 21:24:52
+     *** NOTE ***                            CP =      40.208   TIME= 01:11:14
      The conditions for direct assembly have been met.  No .emat or .erot    
      files will be produced.                                                 
 
@@ -181,8 +178,8 @@ Solve the thermal static analysis and print the results
        *** ELEMENT MATRIX FORMULATION TIMES
          TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-            1       450  SOLID90       0.038   0.000084
-     Time at end of element matrix formulation CP = 74.1547852.              
+            1       450  SOLID90       0.036   0.000081
+     Time at end of element matrix formulation CP = 40.2540894.              
 
      SPARSE MATRIX DIRECT SOLVER.
       Number of equations =        2606,    Maximum wavefront =     72
@@ -190,7 +187,7 @@ Solve the thermal static analysis and print the results
       Memory required for in-core solution     =     4.639 MB
       Memory required for out-of-core solution =     2.499 MB
 
-     *** NOTE ***                            CP =      74.247   TIME= 21:24:52
+     *** NOTE ***                            CP =      40.318   TIME= 01:11:14
      The Sparse Matrix Solver is currently running in the in-core memory     
      mode.  This memory mode uses the most amount of memory in order to      
      avoid using the hard drive as much as possible, which most often        
@@ -205,17 +202,17 @@ Solve the thermal static analysis and print the results
        *** ELEMENT RESULT CALCULATION TIMES
          TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-            1       450  SOLID90       0.027   0.000059
+            1       450  SOLID90       0.024   0.000053
 
        *** NODAL LOAD CALCULATION TIMES
          TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-            1       450  SOLID90       0.017   0.000037
+            1       450  SOLID90       0.019   0.000042
      *** LOAD STEP     1   SUBSTEP     1  COMPLETED.    CUM ITER =      1
      *** TIME =   1.00000         TIME INC =   1.00000      NEW TRIANG MATRIX
 
 
-     *** ANSYS BINARY FILE STATISTICS
+     *** MAPDL BINARY FILE STATISTICS
       BUFFER SIZE USED= 16384
             1.062 MB WRITTEN ON ASSEMBLED MATRIX FILE: file.full
             0.750 MB WRITTEN ON RESULTS FILE: file.rth
@@ -300,7 +297,7 @@ stop mapdl
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.154 seconds)
+   **Total running time of the script:** ( 0 minutes  1.076 seconds)
 
 
 .. _sphx_glr_download_examples_gallery_examples_00-mapdl-examples_3d_plate_thermal.py:

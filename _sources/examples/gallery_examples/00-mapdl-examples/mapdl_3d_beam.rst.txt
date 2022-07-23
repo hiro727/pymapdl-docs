@@ -97,9 +97,9 @@ First, start by launching MAPDL as a service.
  .. code-block:: none
 
 
-    *****  ANSYS SOLVE    COMMAND  *****
+    *****  MAPDL SOLVE    COMMAND  *****
 
-     *** NOTE ***                            CP =      99.916   TIME= 21:25:31
+     *** NOTE ***                            CP =     112.624   TIME= 01:12:47
      There is no title defined for this analysis.                            
 
      *** SELECTION OF ELEMENT TECHNOLOGIES FOR APPLICABLE ELEMENTS ***
@@ -109,16 +109,13 @@ First, start by launching MAPDL as a service.
 
 
 
-     *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2021 R2          21.2BETA ***
+     *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE                  22.2     ***
      Ansys Mechanical Enterprise                       
-     00000000  VERSION=LINUX x64     21:25:31  JUL 15, 2022 CP=     99.916
+     00000000  VERSION=LINUX x64     01:12:47  JUL 23, 2022 CP=    112.624
 
                                                                                
 
 
-
-     ** WARNING: PRE-RELEASE VERSION OF ANSYS 21.2BETA
-      ANSYS,INC TESTING IS NOT COMPLETE - CHECK RESULTS CAREFULLY **
 
                            S O L U T I O N   O P T I O N S
 
@@ -131,7 +128,7 @@ First, start by launching MAPDL as a service.
        NUMBER OF MODES TO EXPAND . . . . . . . . . . .ALL
        ELEMENT RESULTS CALCULATION . . . . . . . . . .ON 
 
-     *** NOTE ***                            CP =      99.917   TIME= 21:25:31
+     *** NOTE ***                            CP =     112.624   TIME= 01:12:47
      The conditions for direct assembly have been met.  No .emat or .erot    
      files will be produced.                                                 
 
@@ -181,8 +178,8 @@ First, start by launching MAPDL as a service.
        *** ELEMENT MATRIX FORMULATION TIMES
          TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-            1        40  SOLID186      0.011   0.000273
-     Time at end of element matrix formulation CP = 99.9335098.              
+            1        40  SOLID186      0.010   0.000261
+     Time at end of element matrix formulation CP = 112.639763.              
 
       BLOCK LANCZOS CALCULATION OF UP TO     6 EIGENVECTORS.
       NUMBER OF EQUATIONS              =          900
@@ -195,7 +192,7 @@ First, start by launching MAPDL as a service.
       Memory required for in-core solution     =     2.159 MB
       Memory required for out-of-core solution =     1.369 MB
 
-     *** NOTE ***                            CP =     100.005   TIME= 21:25:31
+     *** NOTE ***                            CP =     112.679   TIME= 01:12:47
      The Sparse Matrix Solver used by the Block Lanczos eigensolver is       
      currently running in the in-core memory mode.  This memory mode uses    
      the most amount of memory in order to avoid using the hard drive as     
@@ -203,16 +200,16 @@ First, start by launching MAPDL as a service.
      time.  This mode is recommended if enough physical memory is present    
      to accommodate all of the solver data.                                  
 
-     *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2021 R2          21.2BETA ***
+      Process memory required for in-core LANCZOS Workspace             =     3.943703 MB
+      Process memory required for out-of-core LANCZOS Workspace         =     578.976562 KB
+
+     *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE                  22.2     ***
      Ansys Mechanical Enterprise                       
-     00000000  VERSION=LINUX x64     21:25:31  JUL 15, 2022 CP=    100.067
+     00000000  VERSION=LINUX x64     01:12:47  JUL 23, 2022 CP=    112.722
 
                                                                                
 
 
-
-     ** WARNING: PRE-RELEASE VERSION OF ANSYS 21.2BETA
-      ANSYS,INC TESTING IS NOT COMPLETE - CHECK RESULTS CAREFULLY **
 
      *** FREQUENCIES FROM BLOCK LANCZOS ITERATION ***
 
@@ -227,7 +224,7 @@ First, start by launching MAPDL as a service.
         6     254.8511237205    
 
 
-     *** ANSYS BINARY FILE STATISTICS
+     *** MAPDL BINARY FILE STATISTICS
       BUFFER SIZE USED= 16384
             0.750 MB WRITTEN ON ASSEMBLED MATRIX FILE: file.full
             0.062 MB WRITTEN ON MODAL MATRIX FILE: file.mode
@@ -259,7 +256,7 @@ View the results using the pyansys result object
 
     PyMAPDL Result
     Units       : User Defined
-    Version     : 21.2
+    Version     : 22.2
     Cyclic      : False
     Result Sets : 6
     Nodes       : 321
@@ -369,7 +366,7 @@ stop mapdl
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.014 seconds)
+   **Total running time of the script:** ( 0 minutes  0.954 seconds)
 
 
 .. _sphx_glr_download_examples_gallery_examples_00-mapdl-examples_mapdl_3d_beam.py:

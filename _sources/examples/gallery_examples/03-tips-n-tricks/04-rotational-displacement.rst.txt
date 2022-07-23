@@ -54,10 +54,10 @@ of our square.
  .. code-block:: none
 
 
-    *****ANSYS VERIFICATION RUN ONLY*****
+    *****MAPDL VERIFICATION RUN ONLY*****
          DO NOT USE RESULTS FOR PRODUCTION
 
-              ***** ANSYS ANALYSIS DEFINITION (PREP7) *****
+              ***** MAPDL ANALYSIS DEFINITION (PREP7) *****
 
 
 
@@ -140,7 +140,7 @@ Applying Boundary Conditions
  .. code-block:: none
 
 
-    *****  ANSYS SOLVE    COMMAND  *****
+    *****  MAPDL SOLVE    COMMAND  *****
 
      *** NOTE ***                            CP =       0.000   TIME= 00:00:00
      There is no title defined for this analysis.                            
@@ -153,7 +153,7 @@ Applying Boundary Conditions
      HIGHER ACCURACY OF MEMBRANE STRESSES; OTHERWISE, KEYOPT(3)=0 IS SUGGESTED.
 
 
-       *****ANSYS VERIFICATION RUN ONLY*****
+       *****MAPDL VERIFICATION RUN ONLY*****
          DO NOT USE RESULTS FOR PRODUCTION
 
                            S O L U T I O N   O P T I O N S
@@ -347,7 +347,7 @@ stop mapdl
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.944 seconds)
+   **Total running time of the script:** ( 0 minutes  0.860 seconds)
 
 
 .. _sphx_glr_download_examples_gallery_examples_03-tips-n-tricks_04-rotational-displacement.py:

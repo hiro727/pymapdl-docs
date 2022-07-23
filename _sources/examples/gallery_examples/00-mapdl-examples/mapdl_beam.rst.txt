@@ -167,16 +167,13 @@ are sequential
 
     LIST ALL SELECTED ELEMENTS.  (LIST NODES)
 
-     *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2021 R2          21.2BETA ***
+     *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE                  22.2     ***
      Ansys Mechanical Enterprise                       
-     00000000  VERSION=LINUX x64     21:25:34  JUL 15, 2022 CP=    100.435
+     00000000  VERSION=LINUX x64     01:12:50  JUL 23, 2022 CP=    113.051
 
                                                                                
 
 
-
-     ** WARNING: PRE-RELEASE VERSION OF ANSYS 21.2BETA
-      ANSYS,INC TESTING IS NOT COMPLETE - CHECK RESULTS CAREFULLY **
  
         ELEM MAT TYP REL ESY SEC        NODES
  
@@ -314,9 +311,9 @@ run the static analysis
 
  .. code-block:: none
 
-    *****  ANSYS SOLVE    COMMAND  *****
+    *****  MAPDL SOLVE    COMMAND  *****
 
-     *** NOTE ***                            CP =     100.443   TIME= 21:25:34
+     *** NOTE ***                            CP =     113.059   TIME= 01:12:50
      There is no title defined for this analysis.                            
 
      *** SELECTION OF ELEMENT TECHNOLOGIES FOR APPLICABLE ELEMENTS ***
@@ -329,16 +326,13 @@ run the static analysis
 
 
 
-     *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2021 R2          21.2BETA ***
+     *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE                  22.2     ***
      Ansys Mechanical Enterprise                       
-     00000000  VERSION=LINUX x64     21:25:34  JUL 15, 2022 CP=    100.443
+     00000000  VERSION=LINUX x64     01:12:50  JUL 23, 2022 CP=    113.059
 
                                                                                
 
 
-
-     ** WARNING: PRE-RELEASE VERSION OF ANSYS 21.2BETA
-      ANSYS,INC TESTING IS NOT COMPLETE - CHECK RESULTS CAREFULLY **
 
                            S O L U T I O N   O P T I O N S
 
@@ -347,11 +341,11 @@ run the static analysis
        ANALYSIS TYPE . . . . . . . . . . . . . . . . .STATIC (STEADY-STATE)
        GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  
 
-     *** NOTE ***                            CP =     100.444   TIME= 21:25:34
+     *** NOTE ***                            CP =     113.060   TIME= 01:12:50
      Present time 0 is less than or equal to the previous time.  Time will   
      default to 1.                                                           
 
-     *** NOTE ***                            CP =     100.444   TIME= 21:25:34
+     *** NOTE ***                            CP =     113.060   TIME= 01:12:50
      The conditions for direct assembly have been met.  No .emat or .erot    
      files will be produced.                                                 
 
@@ -368,7 +362,7 @@ run the static analysis
 
      SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
 
-     *** NOTE ***                            CP =     100.449   TIME= 21:25:34
+     *** NOTE ***                            CP =     113.066   TIME= 01:12:50
      Predictor is ON by default for structural elements with rotational      
      degrees of freedom.  Use the PRED,OFF command to turn the predictor     
      OFF if it adversely affects the convergence.                            
@@ -381,8 +375,8 @@ run the static analysis
        *** ELEMENT MATRIX FORMULATION TIMES
          TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-            1        22  BEAM188       0.010   0.000445
-     Time at end of element matrix formulation CP = 100.455307.              
+            1        22  BEAM188       0.011   0.000492
+     Time at end of element matrix formulation CP = 113.072433.              
 
      SPARSE MATRIX DIRECT SOLVER.
       Number of equations =          44,    Maximum wavefront =     12
@@ -390,14 +384,14 @@ run the static analysis
       Memory required for in-core solution     =     0.062 MB
       Memory required for out-of-core solution =     0.062 MB
 
-     *** NOTE ***                            CP =     100.459   TIME= 21:25:34
+     *** NOTE ***                            CP =     113.074   TIME= 01:12:50
      The Sparse Matrix Solver is currently running in the in-core memory     
      mode.  This memory mode uses the most amount of memory in order to      
      avoid using the hard drive as much as possible, which most often        
      results in the fastest solution time.  This mode is recommended if      
      enough physical memory is present to accommodate all of the solver      
      data.                                                                   
-     Sparse solver maximum pivot= 5.009534302E+10 at node 8 ROTY.            
+     Sparse solver maximum pivot= 5.009534302E+10 at node 16 ROTY.           
      Sparse solver minimum pivot= 2691965.06 at node 12 UZ.                  
      Sparse solver minimum pivot in absolute value= 2691965.06 at node 12    
      UZ.                                                                     
@@ -405,17 +399,17 @@ run the static analysis
        *** ELEMENT RESULT CALCULATION TIMES
          TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-            1        22  BEAM188       0.030   0.001386
+            1        22  BEAM188       0.028   0.001276
 
        *** NODAL LOAD CALCULATION TIMES
          TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-            1        22  BEAM188       0.001   0.000045
+            1        22  BEAM188       0.001   0.000034
      *** LOAD STEP     1   SUBSTEP     1  COMPLETED.    CUM ITER =      1
      *** TIME =   1.00000         TIME INC =   1.00000      NEW TRIANG MATRIX
 
 
-     *** ANSYS BINARY FILE STATISTICS
+     *** MAPDL BINARY FILE STATISTICS
       BUFFER SIZE USED= 16384
             0.062 MB WRITTEN ON ASSEMBLED MATRIX FILE: file.full
             0.625 MB WRITTEN ON RESULTS FILE: file.rst
@@ -442,7 +436,7 @@ stop mapdl
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.592 seconds)
+   **Total running time of the script:** ( 0 minutes  0.508 seconds)
 
 
 .. _sphx_glr_download_examples_gallery_examples_00-mapdl-examples_mapdl_beam.py:
