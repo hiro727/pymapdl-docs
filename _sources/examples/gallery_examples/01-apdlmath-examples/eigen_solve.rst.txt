@@ -91,8 +91,6 @@ Display size of the M and K matrices
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     (126, 126)
@@ -120,8 +118,6 @@ where `nev` is the number of eigenvalues requested
 
 
 .. rst-class:: sphx-glr-script-out
-
- Out:
 
  .. code-block:: none
 
@@ -155,12 +151,10 @@ properties (e.g. scalar, storage, symmetry...)
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     Calling MAPDL to solve the eigenproblem...
-    Elapsed time to solve this problem: 0.03439688682556152
+    Elapsed time to solve this problem: 0.028296232223510742
 
 
 
@@ -181,11 +175,9 @@ This is the vector of eigenfrequencies.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
-    HXVTAS :
+    XPLQUO :
      Size : 10
       3.381e+02   3.381e+02   6.266e+02   6.266e+02   9.283e+02      <       5
       9.283e+02   1.250e+03   1.250e+03   1.424e+03   1.424e+03      <       10
@@ -298,8 +290,6 @@ factor and finally compute the normalized residual value
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     3.503338761293556e-11
@@ -362,8 +352,6 @@ This residual can be computed for all eigenmodes
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     [0] : Freq = 338.0666635506364   - Residual = 3.503338761293556e-11
@@ -411,8 +399,6 @@ Plot Accuracy of Eigenresults
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
@@ -439,28 +425,23 @@ stop mapdl
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.228 seconds)
+   **Total running time of the script:** ( 0 minutes  1.105 seconds)
 
 
 .. _sphx_glr_download_examples_gallery_examples_01-apdlmath-examples_eigen_solve.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: eigen_solve.py <eigen_solve.py>`
 
-     :download:`Download Python source code: eigen_solve.py <eigen_solve.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: eigen_solve.ipynb <eigen_solve.ipynb>`
+      :download:`Download Jupyter notebook: eigen_solve.ipynb <eigen_solve.ipynb>`
 
 
 .. only:: html
